@@ -76,6 +76,12 @@
         .cs-section li {
             margin-bottom: 10px;
         }
+        .cs-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
         .back-btn {
             display: inline-block;
             margin-top: 40px;
@@ -132,6 +138,7 @@
         <div class="cs-section">
             <h2>The Challenge</h2>
             <p>Modern financial management is often fragmented. Users rely on separate apps to track expenses, transfer money, create invoices, manage savings, and monitor cash flow, making it difficult to maintain a clear view of their financial health. This constant context switching increases cognitive load, slows decision-making, and creates opportunities for costly mistakes.</p>
+            <img src="cs-before-after.png" alt="Before vs After Quicken" class="cs-image">
             <p>Quicken was designed to bring these everyday financial activities into one connected platform. Instead of treating payments, wallets, savings, reporting, and invoicing as separate experiences, the product unifies them within a consistent interface where users can monitor their finances, take action, and complete essential tasks without leaving the ecosystem.</p>
         </div>
 
@@ -144,6 +151,8 @@
         <div class="cs-section">
             <h2>Research & Strategy</h2>
             <p>Before exploring solutions, I wanted to understand why managing money still felt complicated despite the growing number of digital financial tools. I conducted 12 user interviews, surveyed 148 participants, and reviewed six leading finance platforms to identify common behaviours, frustrations, and unmet needs.</p>
+            <img src="cs-research-insights.png" alt="Survey Insights and Competitive Analysis" class="cs-image">
+            <img src="cs-user-interviews.png" alt="User Interviews and Pain Points" class="cs-image">
             <p>These insights shaped the product strategy around three principles:</p>
             <ul>
                 <li><strong>Visibility before action:</strong> Users wanted a clear overview of their financial health before making decisions, making the dashboard the foundation of the experience.</li>
@@ -155,11 +164,13 @@
         <div class="cs-section">
             <h2>Information Architecture & User Flow</h2>
             <p>The experience begins with the dashboard, which serves as the central decision-making hub. It surfaces account balances, recent activity, spending insights, savings progress, and upcoming payments in one place. From there, users can access every major financial task through persistent navigation.</p>
+            <img src="cs-user-flow.png" alt="Quicken User Flow" class="cs-image">
             <p>Every high-value action follows the same interaction pattern: <strong>Review → Take Action → Confirm → Complete</strong>. This consistency reduces cognitive load, shortens the learning curve, and builds trust during sensitive financial interactions.</p>
         </div>
 
         <div class="cs-section">
             <h2>Product Experience</h2>
+            <img src="cs-imac-mockup.png" alt="Quicken Dashboard on iMac" class="cs-image">
             <ul>
                 <li><strong>Dashboard</strong> provides an immediate overview of financial health and highlights the most important actions.</li>
                 <li><strong>Transactions</strong> simplify sending, receiving, and tracking money with clear confirmation states.</li>
