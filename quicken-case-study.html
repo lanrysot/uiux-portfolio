@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -106,6 +106,9 @@
     </style>
 </head>
 <body>
+    <div id="cur"></div>
+    <div id="ring"></div>
+
     <nav id="nav">
         <a href="index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
         <a href="index.html" class="nav-cta">← Back to Portfolio</a>
@@ -242,5 +245,51 @@
 
         <a href="index.html" class="back-btn">Back to Portfolio</a>
     </div>
+
+    <script>
+        // Custom Cursor
+        (function () {
+            const cur = document.getElementById('cur');
+            const ring = document.getElementById('ring');
+            if (!cur || !ring) return;
+
+            let mx = -100, my = -100, rx = -100, ry = -100;
+
+            document.addEventListener('mousemove', e => {
+                mx = e.clientX; my = e.clientY;
+                cur.style.left = mx + 'px';
+                cur.style.top = my + 'px';
+            });
+
+            // Ring follows with smooth lag
+            (function lerp() {
+                rx += (mx - rx) * 0.12;
+                ry += (my - ry) * 0.12;
+                ring.style.left = rx + 'px';
+                ring.style.top = ry + 'px';
+                requestAnimationFrame(lerp);
+            })();
+
+            // Expand ring on hover over interactive elements
+            document.addEventListener('mouseover', e => {
+                if (e.target.closest('a, button, [data-cursor]')) {
+                    cur.style.width = '12px';
+                    cur.style.height = '12px';
+                    ring.style.width = '50px';
+                    ring.style.height = '50px';
+                    ring.style.borderColor = 'var(--ac)';
+                }
+            });
+            document.addEventListener('mouseout', e => {
+                if (e.target.closest('a, button, [data-cursor]')) {
+                    cur.style.width = '7px';
+                    cur.style.height = '7px';
+                    ring.style.width = '30px';
+                    ring.style.height = '30px';
+                    ring.style.borderColor = 'var(--acgs)';
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
