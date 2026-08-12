@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -129,6 +129,8 @@
             </div>
         </div>
 
+        <img src="cs-imac-mockup.png" alt="Quicken Dashboard on iMac" class="cs-image">
+
         <div class="cs-section">
             <h2>Project Overview</h2>
             <p>Managing money often means switching between multiple tools for banking, budgeting, invoicing, savings, and reporting. The goal of Quicken was to consolidate these fragmented experiences into a single platform where users can monitor their finances, move money, manage multiple wallets, generate invoices, track savings goals, and analyse financial performance without unnecessary complexity.</p>
@@ -138,7 +140,6 @@
         <div class="cs-section">
             <h2>The Challenge</h2>
             <p>Modern financial management is often fragmented. Users rely on separate apps to track expenses, transfer money, create invoices, manage savings, and monitor cash flow, making it difficult to maintain a clear view of their financial health. This constant context switching increases cognitive load, slows decision-making, and creates opportunities for costly mistakes.</p>
-            <img src="cs-before-after.png" alt="Before vs After Quicken" class="cs-image">
             <p>Quicken was designed to bring these everyday financial activities into one connected platform. Instead of treating payments, wallets, savings, reporting, and invoicing as separate experiences, the product unifies them within a consistent interface where users can monitor their finances, take action, and complete essential tasks without leaving the ecosystem.</p>
         </div>
 
@@ -146,51 +147,42 @@
             <h2>Problem Statement</h2>
             <p>Most financial tools solve individual problems but fail to provide a connected experience. Users switch between multiple apps to monitor cash flow, send money, manage invoices, track savings, review recurring payments, and analyse performance, making financial management more complex and time-consuming.</p>
             <p>The opportunity was to design a unified platform where every financial task works together. Users can move seamlessly from reviewing their financial health to making transactions, managing wallets, creating invoices, setting savings goals, and tracking performance within one consistent experience. This reduces friction, speeds up decision-making, and helps users manage their finances with greater confidence.</p>
+            <img src="cs-before-after.png" alt="Before vs After Quicken" class="cs-image">
         </div>
 
         <div class="cs-section">
             <h2>Research & Strategy</h2>
             <p>Before exploring solutions, I wanted to understand why managing money still felt complicated despite the growing number of digital financial tools. I conducted 12 user interviews, surveyed 148 participants, and reviewed six leading finance platforms to identify common behaviours, frustrations, and unmet needs.</p>
-            <img src="cs-research-insights.png" alt="Survey Insights and Competitive Analysis" class="cs-image">
-            <img src="cs-user-interviews.png" alt="User Interviews and Pain Points" class="cs-image">
             <p>These insights shaped the product strategy around three principles:</p>
             <ul>
                 <li><strong>Visibility before action:</strong> Users wanted a clear overview of their financial health before making decisions, making the dashboard the foundation of the experience.</li>
                 <li><strong>Connected financial workflows:</strong> Bringing transactions, wallets, invoices, savings, and reporting into one ecosystem reduced context switching and created a more seamless experience.</li>
                 <li><strong>Trust through transparency:</strong> Confirmation screens, secure authentication, transaction receipts, and real-time status updates were introduced to help users feel confident when completing sensitive financial tasks.</li>
             </ul>
+            <img src="cs-user-interviews.png" alt="User Interviews and Pain Points" class="cs-image">
+            <img src="cs-research-insights.png" alt="Survey Insights and Competitive Analysis" class="cs-image">
         </div>
 
         <div class="cs-section">
-            <h2>Information Architecture & User Flow</h2>
+            <h2>Designing the Experience</h2>
             <p>The experience begins with the dashboard, which serves as the central decision-making hub. It surfaces account balances, recent activity, spending insights, savings progress, and upcoming payments in one place. From there, users can access every major financial task through persistent navigation.</p>
-            <img src="cs-user-flow.png" alt="Quicken User Flow" class="cs-image">
             <img src="cs-designing-experience.png" alt="Designing the Experience" class="cs-image">
             <p>Every high-value action follows the same interaction pattern: <strong>Review → Take Action → Confirm → Complete</strong>. This consistency reduces cognitive load, shortens the learning curve, and builds trust during sensitive financial interactions.</p>
-        </div>
-
-        <div class="cs-section">
-            <h2>Product Experience</h2>
-            <img src="cs-imac-mockup.png" alt="Quicken Dashboard on iMac" class="cs-image">
-            <ul>
-                <li><strong>Dashboard</strong> provides an immediate overview of financial health and highlights the most important actions.</li>
-                <li><strong>Transactions</strong> simplify sending, receiving, and tracking money with clear confirmation states.</li>
-                <li><strong>Wallets</strong> help users organise funds across multiple accounts without losing visibility.</li>
-                <li><strong>Invoices</strong> enable freelancers and business owners to create, monitor, and manage payments from one workspace.</li>
-                <li><strong>Savings Goals</strong> encourage long-term financial planning through visual progress tracking.</li>
-                <li><strong>Analytics & Reports</strong> transform financial data into actionable insights that support better decision-making.</li>
-            </ul>
+            <img src="cs-user-flow.png" alt="Quicken User Flow" class="cs-image">
         </div>
 
         <div class="cs-section">
             <h2>Design System & Components</h2>
             <p>The design system was built to make complex financial workflows feel familiar, consistent, and scalable. I established a library of reusable components that maintain consistent interaction patterns across dashboards, transactions, wallets, invoices, savings, analytics, reports, and settings.</p>
-            <img src="cs-design-system.png" alt="Quicken Design System" class="cs-image">
             <p>The visual language combines a clean neutral foundation with a vibrant purple accent to establish hierarchy and reinforce key actions. Financial data is organised through modular cards, responsive tables, charts, status badges, and contextual action buttons.</p>
+            <img src="cs-design-system.png" alt="Quicken Design System" class="cs-image">
         </div>
 
         <div class="cs-section">
-            <h2>Design Constraints & Trade-offs</h2>
+            <h2>Challenges</h2>
+            <p>Designing Quicken wasn't about adding more financial features. The real challenge was making a feature-rich platform feel simple enough for everyday use.</p>
+            <p>As the product expanded to include transactions, wallets, invoices, savings, analytics, and reporting, there was a growing risk of overwhelming users. Instead of exposing every feature at once, I adopted a dashboard-first approach supported by progressive disclosure and contextual navigation. This allowed users to focus on the task at hand while keeping the rest of the platform easily accessible.</p>
+            <p>Security presented another important design consideration. Financial products must inspire confidence without interrupting the user experience. Rather than requiring additional verification at every step, authentication was introduced only for high-risk actions such as transfers and payments. This balanced security with usability and kept routine interactions fast and frictionless.</p>
             <img src="cs-design-constraints.png" alt="Design Constraints and Trade-offs" class="cs-image">
         </div>
 
