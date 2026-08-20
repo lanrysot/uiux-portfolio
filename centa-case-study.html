@@ -125,16 +125,36 @@
     <div id="cur"></div>
     <div id="ring"></div>
 
-    <!-- MAIN NAVIGATION -->
-    <header class="main-nav">
-        <a href="index.html" class="logo" data-cursor>Olanrewaju</a>
-        <nav class="nav-links">
-            <a href="index.html">Work</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="about.html">About</a>
-        </nav>
-        <a href="mailto:olanrewaju@example.com" class="contact-btn" data-cursor>Let's Talk <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </header>
+      <!-- NAV -->
+  <nav>
+    <a class='logo' href='./index.html'>OLANREWAJU<em>.</em>SULAIMON</a>
+    <ul class="nav-ul">
+      <li><a href='./index.html#work'>Work</a></li>
+      <li><a href='./index.html#services'>Services</a></li>
+      <li><a href='./index.html#process'>Process</a></li>
+      <li><a href='./index.html#about'>About</a></li>
+      <li><a class='ncta' href='./index.html#cta'>Let's Work</a></li>
+    </ul>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-inner">
+      <a class='mobile-logo' href='./index.html'>OLANREWAJU<em>.</em>SULAIMON</a>
+      <ul class="mobile-nav-ul">
+        <li><a href='./index.html#work'>Work</a></li>
+        <li><a href='./index.html#services'>Services</a></li>
+        <li><a href='./index.html#process'>Process</a></li>
+        <li><a href='./index.html#about'>About</a></li>
+        <li><a class='ncta' href='./index.html#cta'>Let's Work</a></li>
+      </ul>
+    </div>
+  </div>
 
     <div class="case-study-container">
         <div class="cs-header">
@@ -234,7 +254,24 @@
         </div>
     </div>
 
-    <script>
+        <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-nav-ul a');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
         // Custom Cursor
         (function () {
             const cur = document.getElementById('cur');
@@ -281,3 +318,4 @@
     </script>
 </body>
 </html>
+
