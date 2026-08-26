@@ -31,7 +31,7 @@ body {
   color: var(--tp);
   font-family: 'DM Sans', 'Segoe UI', system-ui, sans-serif;
   overflow-x: hidden;
-  cursor: none
+  cursor: auto;
 }
 
 body::before {
@@ -495,7 +495,7 @@ nav {
   letter-spacing: 1px;
   color: var(--tm);
   background: transparent;
-  cursor: none;
+  cursor: auto;
   transition: all .25s;
   letter-spacing: 1.2px;
   text-transform: uppercase
@@ -532,7 +532,7 @@ nav {
   background: var(--bg);
   position: relative;
   overflow: hidden;
-  cursor: none;
+  cursor: auto;
   transition: background .35s
 }
 
@@ -776,7 +776,7 @@ nav {
   align-items: center;
   justify-content: center;
   background: var(--bg3);
-  cursor: none;
+  cursor: auto;
   transition: background .25s, border-color .25s
 }
 
@@ -839,7 +839,7 @@ nav {
   position: relative;
   z-index: 1;
   transition: background .3s, transform .3s;
-  cursor: none
+  cursor: auto;
 }
 
 .modal-play:hover {
@@ -1158,7 +1158,7 @@ nav {
   letter-spacing: .8px;
   border-radius: 4px;
   border: none;
-  cursor: none;
+  cursor: auto;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -1181,7 +1181,7 @@ nav {
   letter-spacing: .8px;
   border-radius: 4px;
   border: 1px solid var(--bh);
-  cursor: none;
+  cursor: auto;
   text-decoration: none;
   display: inline-flex;
   align-items: center;

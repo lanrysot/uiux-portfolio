@@ -1,16 +1,7 @@
 (function () {
     "use strict";
 
-    /* ── CURSOR ── */
-    // ── Cursor
-    const cur = document.getElementById('cur'), ring = document.getElementById('ring');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-    document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; cur.style.left = mx + 'px'; cur.style.top = my + 'px'; });
-    (function loop() { rx += (mx - rx) * .13; ry += (my - ry) * .13; ring.style.left = rx + 'px'; ring.style.top = ry + 'px'; requestAnimationFrame(loop); })();
-    document.querySelectorAll('a,button,.svc-card,.why-card,.proc-step,.h-stat').forEach(el => {
-        el.addEventListener('mouseenter', () => { cur.style.width = '12px'; cur.style.height = '12px'; ring.style.width = '52px'; ring.style.height = '52px'; ring.style.borderColor = 'var(--bh)'; });
-        el.addEventListener('mouseleave', () => { cur.style.width = '7px'; cur.style.height = '7px'; ring.style.width = '30px'; ring.style.height = '30px'; ring.style.borderColor = 'var(--acgs)'; });
-    });
+    
 
     // ── Scroll reveal
     const obs = new IntersectionObserver(entries => {
@@ -40,7 +31,6 @@
                 vx: (Math.random() - 0.5) * 0.26,
                 vy: (Math.random() - 0.5) * 0.26,
                 a: Math.random() * 0.4 + 0.07
-            });
         }
     }
     makePts();
@@ -77,7 +67,6 @@
     var NAV = document.getElementById('nav');
     window.addEventListener('scroll', function () {
         NAV.classList.toggle('sc', window.scrollY > 60);
-    });
 
     /* ── SCROLL REVEAL ── */
     var rvEls = document.querySelectorAll('.rv');
@@ -98,8 +87,6 @@
                 }
             }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
             for (var oi = 0; oi < rvEls.length; oi++) revObs.observe(rvEls[oi]);
-        });
-    });
 
     /* ── STAT COUNTERS ── */
     function counter(el) {
@@ -156,7 +143,6 @@
             origX = rect.left;
             origY = rect.top;
             socialFloat.style.transition = 'none';
-        });
 
         socialFloat.addEventListener('pointermove', function (e) {
             if (!dragging) return;
@@ -172,7 +158,6 @@
             socialFloat.style.left = left + 'px';
             socialFloat.style.top = top + 'px';
             socialFloat.style.right = 'auto';
-        });
 
         function stopDrag(e) {
             if (!dragging) return;
@@ -200,13 +185,10 @@ if (mobileMenuBtn && mobileMenu) {
         mobileMenuBtn.classList.toggle('active');
         mobileMenu.classList.toggle('active');
         document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-    });
     
     mobileMenuLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileMenuBtn.classList.remove('active');
             mobileMenu.classList.remove('active');
             document.body.style.overflow = '';
-        });
-    });
 }

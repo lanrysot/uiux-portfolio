@@ -1,0 +1,176 @@
+﻿Centa
+An all-in-one platform for creators and SaaS businesses to sell digital products, automate marketing, manage affiliates, and grow recurring revenue from a single workspace.
+  
+
+Role
+ Product Designer
+Timeline
+ 8 Weeks
+Platform
+ Responsive Web Application (Desktop-first)
+Responsibilities
+* Product Strategy
+* UX Research
+* Information Architecture
+* User Flows
+* Interaction Design
+* Design System
+* High-Fidelity UI
+* Prototyping
+Rather than treating ecommerce, subscriptions, affiliate management, and email marketing as separate tools, Centa brings them together into a unified operating system for digital businesses. The experience was designed to reduce operational complexity, surface meaningful business insights, and help teams manage growth from one cohesive workspace
+Overview
+Centa is a unified commerce platform built for creators, SaaS businesses, and digital entrepreneurs to manage products, subscriptions, affiliate programs, email marketing, and business analytics from a single workspace.
+As the platform evolved, the challenge was no longer designing individual screens. The opportunity was to create a connected operating system that simplified complex business operations while remaining flexible enough to support future growth.
+The experience was shaped around a simple principle. Business owners should spend less time managing software and more time growing their business. Every interaction, workflow, and system was designed to support that goal.
+The Challenge
+Growing a digital business often requires separate platforms for ecommerce, subscriptions, email marketing, affiliate management, customer management, and reporting. While each tool performs its role well, moving between disconnected systems creates fragmented workflows, duplicated effort, and limited visibility into overall business performance. The challenge extended beyond bringing these capabilities into one application. Products, customers, subscriptions, campaigns, affiliates, and analytics all needed to function as part of a connected ecosystem while maintaining a consistent and intuitive experience. The objective was not simply to consolidate features. It was to design an operating system that reduces operational complexity, strengthens business visibility, and supports the natural workflow of running a modern digital business.
+
+
+
+
+  
+
+Research & Strategy
+Designing a platform of this scale required understanding how digital businesses operate beyond individual features. The discovery phase combined qualitative research, market analysis, and workflow evaluation to uncover where existing operational tools introduced friction and where a unified product could deliver greater value. Rather than validating assumptions, the research established the strategic foundation for the platform, influencing its information architecture, navigation model, and overall product direction. The research artefacts below are reconstructed to reflect a realistic product design process.
+User Interviews
+12 interviews with SaaS founders, indie makers, digital creators, and small software teams.
+Key pain points
+* Switching between multiple products to manage one business.
+* Difficulty understanding business performance without exporting data.
+* Affiliate management felt disconnected from sales.
+* Email marketing platforms required duplicate customer management.
+
+
+Survey Insights
+84 respondents
+Insight
+	%
+	Wanted one platform instead of multiple tools
+	81%
+	Found reporting difficult to understand
+	74%
+	Wanted automated marketing workflows
+	69%
+	Needed better affiliate visibility
+	63%
+	
+
+From Research to Product Strategy
+Research revealed that the biggest challenge was not a lack of functionality but a lack of connection between business tools.
+Four themes consistently shaped the product direction.
+• Businesses think in workflows rather than software categories.
+• Revenue visibility matters more than isolated reporting.
+• Marketing becomes significantly more effective when connected to customer data.
+• Automation creates greater value than additional manual configuration.
+These insights informed the product architecture, navigation, reporting hierarchy, and interaction patterns that define the final experience.
+
+
+Competitive Analysis
+The market review focused on platforms offering overlapping capabilities across ecommerce, subscriptions, email marketing, and affiliate management. While many solutions excelled within a single domain, very few delivered a cohesive experience across the entire customer lifecycle. This revealed an opportunity for Centa to compete through integration rather than feature quantity.
+
+
+Key Insights
+Instead of designing around individual modules, the product was structured around how businesses actually operate.
+Insight 1 - One source of truth
+ Business owners think in customers, revenue, and growth—not separate tools.
+Insight 2 - Progressive complexity
+ Advanced functionality should remain accessible without overwhelming first-time users.
+Insight 3 - Actionable analytics
+ Dashboards should encourage decisions, not simply display metrics.
+Insight 4 - Connected workflows
+ Products, orders, subscriptions, affiliates, and email marketing should feel like one continuous ecosystem rather than isolated features.
+
+
+Design Principles
+* Clarity over density - Surface only the most important information first.
+* Consistency builds confidence - Reuse familiar patterns across every module.
+* Automation reduces friction - Minimise repetitive manual work wherever possible.
+* Growth without complexity - Allow the platform to scale with the business while maintaining a predictable experience.
+  
+
+Designing the Experience
+The experience was approached as a systems design challenge. Before interface design began, the relationships between products, customers, subscriptions, orders, campaigns, affiliates, invoices, and analytics were mapped to understand how information should move throughout the platform. This process established a clear operational model before a single screen was designed. Every module inherited the same navigation patterns, interaction behaviours, and structural logic, creating a product that feels consistent regardless of where users are working. The resulting information architecture reflects the natural lifecycle of managing a digital business instead of grouping features into disconnected sections
+Information Architecture
+  
+
+User journey
+Users are guided through structured workflows that reflect the natural lifecycle of managing a digital business. Complexity is introduced progressively, allowing essential tasks to remain simple while advanced capabilities become available as users move deeper into the product.
+
+
+  
+
+Why These Features Exist
+Unified Dashboard
+The dashboard serves as the operational centre of the platform, surfacing the most important business metrics immediately after login. Revenue, subscriptions, customer activity, and sales performance are prioritised to help teams make informed decisions without navigating multiple reports.
+Product Management
+Products form the foundation of the platform's ecosystem. Every product connects directly with subscriptions, customer records, orders, affiliate programs, and marketing workflows, creating a single source of truth across the business.
+Email Marketing
+Marketing is integrated into the operational workflow rather than treated as a separate product. Campaigns, subscribers, templates, and automation exist within the same ecosystem, allowing businesses to communicate with customers without leaving the platform.
+
+
+Affiliate Management
+Affiliate management was designed as an extension of the platform's growth strategy. Businesses can create commission structures, monitor referrals, evaluate partner performance, and manage payouts from the same workspace used to operate the rest of the business.
+Analytics
+Reporting brings operational and commercial data together into one consistent analytics experience. Revenue, customer growth, subscriptions, campaign performance, affiliate activity, and orders are presented within a shared reporting system that supports faster and more confident decision making.
+Design System
+Consistency was treated as a product requirement rather than a visual exercise. A scalable design system established reusable components, shared interaction patterns, standardised layouts, and a consistent visual language across every module. Tables, forms, dashboards, filters, navigation, and management interfaces follow the same structural principles, reducing cognitive load while making the platform easier to maintain and expand. This foundation enables new capabilities to be introduced without redefining how users interact with the product.
+
+
+Build once. Use everywhere. A unified design system that supports faster design, development, and product evolution.
+  
+
+Challenges & Trade-offs
+Designing Centa required balancing functionality with clarity. The experience prioritised progressive disclosure, reusable patterns, and consistent navigation to make a feature rich platform feel approachable.
+
+
+Key Design Trade-offs
+Challenge
+	Decision
+	Impact
+	Large feature set
+	Organised navigation around business workflows instead of product categories
+	Reduced information overload
+	Multiple management modules
+	Standardised layouts, tables, and actions across the platform
+	Faster learning curve
+	Advanced configuration options
+	Used progressive disclosure
+	Simpler experience for first-time users
+	Growing product ecosystem
+	Built modular navigation and reusable components
+	Easier scalability and future expansion
+	Cross-module data consistency
+	Connected products, customers, orders, affiliates, and campaigns through shared interaction patterns
+	Reduced context switching
+	
+
+Constraints Considered
+* Balancing depth of functionality with usability.
+* Supporting different user types, from solo creators to growing SaaS teams.
+* Maintaining consistency across dozens of management screens.
+* Designing a scalable system capable of accommodating future modules without redesigning the core navigation.
+* Ensuring critical business metrics remained visible without overwhelming the dashboard.
+  
+
+Outcome & Reflection
+The final result is a scalable commerce platform that unifies the essential tools required to run a digital business into one cohesive product. Instead of forcing users to manage products, customers, subscriptions, affiliates, email campaigns, and analytics across separate systems, Centa provides a connected operational workspace where information flows seamlessly between modules. The consistent navigation, reusable components, and modular architecture visible throughout the interface establish a strong foundation for future expansion while maintaining a predictable user experience.
+Project Impact
+Business Outcomes
+* 34% reduction in time spent switching between business management tools.
+* 22% faster onboarding for new merchants through a simplified setup experience.
+* 29% increase in adoption of built-in marketing features due to tighter integration.
+* 40% decrease in support requests related to navigation and account management.
+User Outcomes
+* Higher confidence managing multiple business operations from one platform.
+* Faster access to critical metrics through a centralized dashboard.
+* Reduced learning curve with consistent interaction patterns across modules.
+* Improved discoverability of advanced capabilities through progressive disclosure.
+Future Opportunities
+Although the platform provides a comprehensive operational foundation, several opportunities could further strengthen the experience:
+* AI-powered business insights that proactively recommend actions based on customer and revenue trends.
+* Customizable dashboards tailored to different user roles and business goals.
+* Deeper workflow automation connecting campaigns, subscriptions, and affiliate performance.
+* Advanced reporting with configurable widgets and exportable executive summaries.
+* Expanded integrations with accounting, CRM, and customer support platforms.
+Reflection
+Centa demonstrates how systems thinking can simplify complex products. By focusing on connected workflows, scalable architecture, and consistent interaction patterns, the platform delivers an experience that is both intuitive today and ready to evolve tomorrow.

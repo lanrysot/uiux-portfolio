@@ -122,10 +122,7 @@
     </style>
 </head>
 <body>
-    <div id="cur"></div>
-    <div id="ring"></div>
-
-        <!-- NAV -->
+    <!-- NAV -->
   <nav id="nav">
       <a href="./index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
       <ul class="nav-links">
@@ -271,28 +268,7 @@
                 });
             });
         }
-        // Custom Cursor
-        (function () {
-            const cur = document.getElementById('cur');
-            const ring = document.getElementById('ring');
-            if (!cur || !ring) return;
-
-            let mx = -100, my = -100, rx = -100, ry = -100;
-
-            document.addEventListener('mousemove', e => {
-                mx = e.clientX; my = e.clientY;
-                cur.style.left = mx + 'px';
-                cur.style.top = my + 'px';
-            });
-
-            // Ring follows with smooth lag
-            (function lerp() {
-                rx += (mx - rx) * 0.12;
-                ry += (my - ry) * 0.12;
-                ring.style.left = rx + 'px';
-                ring.style.top = ry + 'px';
-                requestAnimationFrame(lerp);
-            })();
+        
 
             // Expand ring on hover over interactive elements
             document.addEventListener('mouseover', e => {
