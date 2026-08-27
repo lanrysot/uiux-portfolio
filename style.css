@@ -3144,3 +3144,19 @@
         font-size: 13px !important;
     }
 }
+
+@media (max-width: 768px) {
+    /* Prevent buttons from breaking into multiple lines */
+    .sc-view-btn,
+    .btn-p,
+    .btn-s,
+    .work-cta a {
+        white-space: nowrap !important;
+    }
+    
+    /* Specifically fit the 'CLICK TO SEE MORE PROJECT' button */
+    .sc-view-btn {
+        font-size: 11px !important;
+        padding: 8px 12px !important;
+    }
+}
