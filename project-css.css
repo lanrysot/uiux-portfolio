@@ -1269,3 +1269,18 @@ nav {
         font-size: 14px;
     }
 }
+
+@media (max-width: 768px) { .pstats {
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.pstats::-webkit-scrollbar {
+  display: none;
+}
+.pstat {
+  flex: 0 0 auto !important;
+  min-width: 160px;
+  border-bottom: none !important;
+} }
+
