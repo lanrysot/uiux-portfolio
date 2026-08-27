@@ -3090,3 +3090,57 @@
         box-sizing: border-box !important;
     }
 }
+
+/* Quicken Preview Overlay Styles */
+.cs-preview-link {
+    display: block;
+    width: 100%;
+    position: relative;
+    line-height: 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px; /* matching vshell corner if any */
+}
+.cs-preview-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.cs-preview-link:hover .cs-preview-img {
+    transform: scale(1.03);
+}
+.cs-preview-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 10%, transparent);
+    color: white;
+    line-height: 1.5;
+    text-align: left;
+}
+.cs-preview-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.cs-preview-subtitle {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .cs-preview-overlay {
+        padding: 16px !important; 
+        background: linear-gradient(to top, rgba(0,0,0,0.95) 30%, transparent) !important;
+    }
+    .cs-preview-title {
+        font-size: 18px !important;
+        margin-bottom: 4px !important;
+    }
+    .cs-preview-subtitle {
+        font-size: 13px !important;
+    }
+}
