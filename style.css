@@ -1176,7 +1176,7 @@
 
  .srv-grid {
      display: grid;
-     grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: repeat(2, 1fr);
      gap: 1px;
      background: var(--b);
      border: 1px solid var(--b)
@@ -1297,7 +1297,7 @@
 
  .srv-grid {
      display: grid;
-     grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: repeat(2, 1fr);
      gap: 1px;
      background: var(--b);
      border: 1px solid var(--b)
@@ -2978,33 +2978,49 @@
     }
 }
 
-/* SC Hover Overlay */
-.sc .sc-hover-overlay {
+
+
+/* SC Thumb Layout */
+.sc-thumb {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: var(--bg2);
+    margin: -50px -40px 30px -40px;
+    border-bottom: 1px solid var(--b);
+}
+@media (max-width: 768px) {
+    .sc-thumb {
+        margin: -30px -20px 20px -20px;
+    }
+}
+.sc-overlay {
     position: absolute;
     inset: 0;
-    background: rgba(3, 7, 20, 0.85);
+    background: rgba(3, 7, 20, .85);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 10;
+    transition: opacity .35s;
+    backdrop-filter: blur(4px);
 }
-.sc:hover .sc-hover-overlay {
+.sc:hover .sc-overlay {
     opacity: 1;
 }
-.sc-hover-btn {
+.sc-view-btn {
     background: var(--ac);
     color: #fff;
-    padding: 12px 24px;
+    padding: 10px 20px;
     font-size: 13px;
     font-weight: 700;
-    border-radius: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transform: translateY(20px);
-    transition: transform 0.3s ease;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transform: translateY(16px);
+    transition: transform .35s;
 }
-.sc:hover .sc-hover-btn {
+.sc:hover .sc-view-btn {
     transform: translateY(0);
 }
