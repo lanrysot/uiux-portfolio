@@ -3076,3 +3076,17 @@
         gap: 8px; /* ensures they don't overlap if screen gets tiny */
     }
 }
+
+@media (max-width: 768px) {
+    .hero-actions {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 12px !important;
+    }
+    .hero-actions .btn-p,
+    .hero-actions .btn-s {
+        width: 100% !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+    }
+}
