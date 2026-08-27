@@ -2977,3 +2977,34 @@
         font-size: 15px;
     }
 }
+
+/* SC Hover Overlay */
+.sc .sc-hover-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 7, 20, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+.sc:hover .sc-hover-overlay {
+    opacity: 1;
+}
+.sc-hover-btn {
+    background: var(--ac);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+.sc:hover .sc-hover-btn {
+    transform: translateY(0);
+}
