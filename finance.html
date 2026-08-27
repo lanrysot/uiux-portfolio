@@ -17,7 +17,7 @@
   <link rel="shortcut icon" href="./IMG_4387.PNG" type="image/x-icon">
   <link rel="dns-prefetch" href="//www.youtube.com">
   <link rel="dns-prefetch" href="//lanrysot.github.io/literate-dollop">
-  <link rel="stylesheet" href="project-css.css?v=7">
+  <link rel="stylesheet" href="project-css.css?v=8">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -45,27 +45,42 @@
     "description": "Explore 60+ UI/UX Design projects by OLANREWAJU SULAIMON in Lagos, Nigeria and Africa. Case studies for UX case studies, interactive prototypes, UI/UX design, and product design design for Fintech, SaaS, and AI companies."
   }
   </script>
-
   <style>
     @media (max-width: 768px) {
       .pstats {
         display: flex !important;
         flex-wrap: nowrap !important;
-        overflow-x: auto !important;
-        -webkit-overflow-scrolling: touch !important;
-        padding-bottom: 10px !important;
-      }
-      .pstats::-webkit-scrollbar {
-        display: none !important;
+        overflow: hidden !important;
+        width: 100% !important;
+        border: 1px solid var(--b) !important;
+        border-radius: 8px !important;
+        padding-bottom: 0 !important;
+        margin-top: 40px !important;
       }
       .pstat {
-        flex: 0 0 160px !important;
-        min-width: 160px !important;
+        flex: 1 1 0 !important;
+        min-width: 0 !important;
+        padding: 12px 6px !important;
         border-bottom: none !important;
         border-right: 1px solid var(--b) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
       }
       .pstat:last-child {
         border-right: none !important;
+      }
+      .pstat-n {
+        font-size: 18px !important;
+        margin-bottom: 4px !important;
+        display: block !important;
+      }
+      .pstat-l {
+        font-size: 11px !important;
+        line-height: 1.2 !important;
+        display: block !important;
       }
     }
   </style>
@@ -115,8 +130,7 @@
       <div class="pstats rv d3">
         <div class="pstat"><span class="pstat-n" data-to="6" data-suf="+">0+</span><span class="pstat-l">Projects
             Delivered</span></div>
-        <div class="pstat"><span class="pstat-n" data-to="6" data-suf="+">0+</span><span class="pstat-l">Brands
-            Served</span></div>
+        
         <div class="pstat"><span class="pstat-n" data-to="3" data-suf="">0</span><span class="pstat-l">Industries</span>
         </div>
         <div class="pstat"><span class="pstat-n" data-to="100" data-suf="%">0%</span><span class="pstat-l">Client
