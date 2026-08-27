@@ -3060,3 +3060,19 @@
 .cs-table tr:last-child td {
     border-bottom: none;
 }
+
+@media (max-width: 768px) {
+    .nav-cta {
+        white-space: nowrap !important;
+        padding: 8px 12px !important;
+        font-size: 11px !important;
+        margin-right: 10px !important; /* space before hamburger */
+    }
+    .nav-logo {
+        font-size: 13px !important; /* slightly smaller to fit everything */
+        margin-right: auto !important; /* push CTA to right */
+    }
+    nav {
+        gap: 8px; /* ensures they don't overlap if screen gets tiny */
+    }
+}
