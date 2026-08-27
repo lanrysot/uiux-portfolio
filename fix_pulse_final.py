@@ -1,158 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PulseHealth - Healthcare Management Platform | Case Study</title>
-    <link rel="stylesheet" href="style.css?v=15">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        .case-study-container {
-            max-width: 1000px;
-            margin: 120px auto 60px;
-            padding: 0 5%;
-            color: #fff;
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-        }
-        .cs-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        .cs-title {
-            font-size: 3rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        .cs-subtitle {
-            font-size: 1.2rem;
-            color: #aaa;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .cs-meta {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            background: rgba(255,255,255,0.05);
-            padding: 30px;
-            border-radius: 12px;
-            margin: 40px 0;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .meta-item h4 {
-            font-size: 0.9rem;
-            color: #aaa;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-        }
-        .meta-item p {
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-        .cs-section {
-            margin-bottom: 60px;
-        }
-        .cs-section h2 {
-            font-size: 2rem;
-            margin-bottom: 24px;
-            font-weight: 700;
-            color: var(--ac, #a482fb);
-        }
-        .cs-section p {
-            margin-bottom: 20px;
-            color: #ccc;
-            font-size: 1.1rem;
-        }
-        .cs-section ul {
-            margin-bottom: 20px;
-            padding-left: 20px;
-            color: #ccc;
-            font-size: 1.1rem;
-        }
-        .cs-section li {
-            margin-bottom: 10px;
-        }
-        .cs-image {
-            width: 100%;
-            border-radius: 12px;
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-        .back-btn {
-            display: inline-block;
-            margin-top: 40px;
-            padding: 12px 24px;
-            background: var(--ac, #a482fb);
-            color: #000;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 8px;
-            transition: opacity 0.3s;
-        }
-        .back-btn:hover {
-            opacity: 0.8;
-        }
-        @media (max-width: 768px) {
-            .cs-title {
-                font-size: 2rem;
-            }
-            .cs-subtitle {
-                font-size: 1rem;
-            }
-            .cs-section h2 {
-                font-size: 1.5rem;
-            }
-            .case-study-container {
-                margin: 100px auto 40px;
-                padding: 0 20px;
-            }
-            .cs-meta {
-                grid-template-columns: 1fr;
-                gap: 12px;
-                padding: 20px;
-            }
-            .back-btn {
-                width: 100%;
-                text-align: center;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- NAV -->
-  <nav id="nav">
-      <a href="./index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
-      <ul class="nav-links">
-          <li><a href="./index.html#reel">Case Studies</a></li>
-          <li><a href="./index.html#services">Services</a></li>
-          <li><a href="./index.html#process">Process</a></li>
-          <li><a href="./index.html#about">About</a></li>
-          <li><a href="./index.html#reviews">Reviews</a></li>
-      </ul>
-      <a href="https://cal.com/OLANREWAJU-SULAIMON" class="nav-cta">Start a Project ?</a>
-      <button class="mobile-menu-btn" id="mobileMenuBtn">
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
-  </nav>
+﻿import re
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-      <ul class="mobile-nav-ul">
-          <li><a href="./index.html#reel">Case Studies</a></li>
-          <li><a href="./index.html#services">Services</a></li>
-          <li><a href="./index.html#process">Process</a></li>
-          <li><a href="./index.html#about">About</a></li>
-          <li><a href="./index.html#reviews">Reviews</a></li>
-          <li><a class="ncta" href="https://cal.com/OLANREWAJU-SULAIMON">Start a Project</a></li>
-      </ul>
-  </div>
+with open('centa-case-study.html', 'r', encoding='utf-8') as f:
+    html = f.read()
 
-    <div class="case-study-container">
+# Get the top part up to the container
+top_part = html.split('<div class="case-study-container">')[0]
+
+# Fix title
+top_part = top_part.replace('<title>Centa - CRM Sales Dashboard | Case Study</title>', '<title>PulseHealth - Healthcare Management Platform | Case Study</title>')
+
+# Get the bottom part from the script onwards
+# But wait, there is a back button before the script.
+bottom_part = '''
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
+            <a href="portfolio.html" class="back-btn">Back to Portfolio</a>
+        </div>
+    </div>
+''' + '<script>' + html.split('<script>')[1]
+
+replacement = '''<div class="case-study-container">
         <div class="cs-header">
             <h1 class="cs-title">PulseHealth</h1>
             <p class="cs-subtitle">Simplifying healthcare operations, one workflow at a time.<br><br>PulseHealth is a healthcare management platform designed to bring the everyday operations of a medical practice into one connected experience, from appointments and patient records to medical history, imaging, prescriptions, and payments.</p>
@@ -278,52 +144,10 @@
             <p>The biggest design opportunity was deciding what practitioners needed to see immediately, what could sit deeper within the experience, and how individual workflows could remain connected without creating unnecessary complexity.</p>
             <p>For PulseHealth, that meant designing beyond individual screens and creating a system that gives practitioners clarity, context, and control throughout the day.</p>
         </div>
+'''
 
-        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
-            <a href="portfolio.html" class="back-btn">Back to Portfolio</a>
-        </div>
-    </div>
-<script>
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileMenuLinks = document.querySelectorAll('.mobile-nav-ul a');
-        if (mobileMenuBtn && mobileMenu) {
-            mobileMenuBtn.addEventListener('click', () => {
-                mobileMenuBtn.classList.toggle('active');
-                mobileMenu.classList.toggle('active');
-                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
-            });
-            mobileMenuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenuBtn.classList.remove('active');
-                    mobileMenu.classList.remove('active');
-                    document.body.style.overflow = '';
-                });
-            });
-        }
-        
+final_html = top_part + replacement + bottom_part
 
-            // Expand ring on hover over interactive elements
-            document.addEventListener('mouseover', e => {
-                if (e.target.closest('a, button, [data-cursor]')) {
-                    cur.style.width = '12px';
-                    cur.style.height = '12px';
-                    ring.style.width = '50px';
-                    ring.style.height = '50px';
-                    ring.style.borderColor = 'var(--ac)';
-                }
-            });
-            document.addEventListener('mouseout', e => {
-                if (e.target.closest('a, button, [data-cursor]')) {
-                    cur.style.width = '7px';
-                    cur.style.height = '7px';
-                    ring.style.width = '30px';
-                    ring.style.height = '30px';
-                    ring.style.borderColor = 'var(--acgs)';
-                }
-            });
-        })();
-    </script>
-</body>
-</html>
+with open('pulsehealth-case-study.html', 'w', encoding='utf-8') as f:
+    f.write(final_html)
 
