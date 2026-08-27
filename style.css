@@ -3024,3 +3024,39 @@
 .sc:hover .sc-view-btn {
     transform: translateY(0);
 }
+.cs-section h3 {
+    font-size: 1.4rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.cs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1.05rem;
+}
+.cs-table th, .cs-table td {
+    padding: 18px 24px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.cs-table th {
+    background: rgba(255,255,255,0.06);
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+.cs-table td {
+    color: #ccc;
+    line-height: 1.5;
+}
+.cs-table tr:last-child td {
+    border-bottom: none;
+}

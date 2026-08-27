@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PulseHealth - Healthcare Management Platform | Case Study</title>
-    <link rel="stylesheet" href="style.css?v=13">
+    <link rel="stylesheet" href="style.css?v=14">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         .case-study-container {
@@ -163,7 +163,7 @@
         <div class="cs-meta" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
             <div class="meta-item">
                 <h4>Role</h4>
-                <p>Product Design &bull; UX Strategy &bull; UI Design &bull; Interaction Design &bull; Prototyping</p>
+                <p>Product Design &bull; UX Strategy &bull; UI/UX &bull; Prototyping</p>
             </div>
             <div class="meta-item">
                 <h4>Platform</h4>
@@ -171,126 +171,189 @@
             </div>
         </div>
 
-        <div class="cs-content">
-            <div class="cs-section">
-                <h2>The Challenge</h2>
-                <p>Healthcare professionals operate across a wide range of clinical and administrative tasks, often moving between appointments, patient information, medical records, prescriptions, payments, and follow-ups. When these workflows feel disconnected, valuable time is spent navigating the system rather than focusing on patient care.</p>
-                <p>We saw an opportunity to bring these critical touchpoints together through a single, structured workspace, one that gives practitioners a clear view of their day while keeping deeper patient and operational information within easy reach.</p>
-                <p>The challenge was less about adding functionality and more about creating clarity across complexity. PulseHealth needed to make high-frequency tasks easy to find, quick to complete, and simple to revisit without overwhelming the practitioner.</p>
-                <p>We therefore centred the experience around three principles: visibility, speed, and continuity. These shaped the product architecture - from the dashboard and calendar experience to patient profiles, medical records, payments, and notifications - creating a more connected way to manage the practice.</p>
-                <img src="pulsehealth-challenge.png" alt="From Fragmented to Focused" class="cs-image">
-            </div>
+        <div class="cs-section">
+            <h2>The Challenge</h2>
+            <p>Healthcare professionals operate across a wide range of clinical and administrative tasks, often moving between appointments, patient information, medical records, prescriptions, payments, and follow-ups. When these workflows feel disconnected, valuable time is spent navigating the system rather than focusing on patient care.</p>
+            <p>We saw an opportunity to bring these critical touchpoints together through a single, structured workspace, one that gives practitioners a clear view of their day while keeping deeper patient and operational information within easy reach.</p>
+            <p>The challenge was less about adding functionality and more about creating clarity across complexity. PulseHealth needed to make high-frequency tasks easy to find, quick to complete, and simple to revisit without overwhelming the practitioner.</p>
+            <p>We therefore centred the experience around three principles: visibility, speed, and continuity. These shaped the product architecture - from the dashboard and calendar experience to patient profiles, medical records, payments, and notifications - creating a more connected way to manage the practice.</p>
+            <img src="pulsehealth-challenge.png" alt="From Fragmented to Focused" class="cs-image">
+        </div>
 
-            <div class="cs-section">
-                <h2>Research &amp; Strategy</h2>
-                <p>We approached the discovery phase by looking at how healthcare professionals manage the operational demands of a busy practice, from appointments and patient information to payments, follow-ups, and day-to-day clinical activity.</p>
-                <p>Through 12 practitioner interviews, a short survey, and competitive analysis, we identified three themes that shaped the product direction.</p>
-                
-                <h4 style="margin-top: 20px; color:#fff;">01. Make the day immediately visible</h4>
-                <p>Practitioners need to understand what requires their attention without moving across multiple parts of the product. Appointments, patient activity, outstanding payments, and important updates therefore needed to be visible at a glance.</p>
-                
-                <h4 style="margin-top: 20px; color:#fff;">02. Connect clinical and operational workflows</h4>
-                <p>Scheduling a patient, reviewing their history, documenting care, and following up are not separate activities. We treated them as connected moments within the same practitioner journey.</p>
-                
-                <h4 style="margin-top: 20px; color:#fff;">03. Keep actions close to context</h4>
-                <p>We reduced unnecessary navigation by placing relevant actions where decisions happen, whether that means adding an appointment, viewing patient details, sending a reminder, or managing a prescription.</p>
-                
-                <h3 style="margin-top: 30px; margin-bottom: 15px; color:#fff;">Design Principles</h3>
-                <p>These insights led to a simple experience model:<br>
-                <strong>See the day. Find the patient. Take action. Stay informed.</strong><br>
-                This became the foundation for the dashboard, scheduling, patient management, clinical records, payments, and notification experiences, giving PulseHealth a consistent structure across the product.</p>
-                <img src="pulsehealth-research.png" alt="Research and Strategy" class="cs-image">
-            </div>
+        <div class="cs-section">
+            <h2>Research &amp; Strategy</h2>
+            <p>We approached the discovery phase by looking at how healthcare professionals manage the operational demands of a busy practice, from appointments and patient information to payments, follow-ups, and day-to-day clinical activity.</p>
+            <p>Through 12 practitioner interviews, a short survey, and competitive analysis, we identified three themes that shaped the product direction.</p>
+            
+            <h3>01. Make the day immediately visible</h3>
+            <p>Practitioners need to understand what requires their attention without moving across multiple parts of the product. Appointments, patient activity, outstanding payments, and important updates therefore needed to be visible at a glance.</p>
+            
+            <h3>02. Connect clinical and operational workflows</h3>
+            <p>Scheduling a patient, reviewing their history, documenting care, and following up are not separate activities. We treated them as connected moments within the same practitioner journey.</p>
+            
+            <h3>03. Keep actions close to context</h3>
+            <p>We reduced unnecessary navigation by placing relevant actions where decisions happen, whether that means adding an appointment, viewing patient details, sending a reminder, or managing a prescription.</p>
+            
+            <h3>Design Principles</h3>
+            <p>These insights led to a simple experience model:<br>
+            <strong>See the day. Find the patient. Take action. Stay informed.</strong><br>
+            This became the foundation for the dashboard, scheduling, patient management, clinical records, payments, and notification experiences, giving PulseHealth a consistent structure across the product.</p>
+            <img src="pulsehealth-research.png" alt="Research and Strategy" class="cs-image">
+        </div>
 
-            <div class="cs-section">
-                <h2>Designing the Experience</h2>
-                <p>We structured PulseHealth around the way practitioners move through their day. The experience makes it easy to understand what needs attention, find the right patient, complete an action, and stay informed.</p>
-                <p>The information architecture brings the core workflows into the primary navigation: Dashboard, Schedule, Patients, Medical Records, Prescriptions, Payments, Reports, Notifications, and Settings. This creates a clear foundation while keeping each area focused on its specific task.</p>
+        <div class="cs-section">
+            <h2>Designing the Experience</h2>
+            <p>We structured PulseHealth around the way practitioners move through their day. The experience makes it easy to understand what needs attention, find the right patient, complete an action, and stay informed.</p>
+            <p>The information architecture brings the core workflows into the primary navigation: Dashboard, Schedule, Patients, Medical Records, Prescriptions, Payments, Reports, Notifications, and Settings. This creates a clear foundation while keeping each area focused on its specific task.</p>
 
-                <h4 style="margin-top: 20px; color:#fff;">01. Start with the day</h4>
-                <p>The dashboard serves as the operational starting point. Rather than presenting isolated features, it brings patient volume, appointments, new patients, visit duration, today's schedule, patient activity, and unpaid bills into a single view.</p>
+            <h3>01. Start with the day</h3>
+            <p>The dashboard serves as the operational starting point. Rather than presenting isolated features, it brings patient volume, appointments, new patients, visit duration, today's schedule, patient activity, and unpaid bills into a single view.</p>
 
-                <h4 style="margin-top: 20px; color:#fff;">02. Move naturally into patient care</h4>
-                <p>We connected patient information with the clinical context around it. Practitioners can move between patient details, medical history, appointments, prescriptions, and related records without having to reconstruct the patient's story across separate areas of the product.</p>
+            <h3>02. Move naturally into patient care</h3>
+            <p>We connected patient information with the clinical context around it. Practitioners can move between patient details, medical history, appointments, prescriptions, and related records without having to reconstruct the patient's story across separate areas of the product.</p>
 
-                <h4 style="margin-top: 20px; color:#fff;">03. Keep actions close to context</h4>
-                <p>Key actions are placed where they are most relevant, including adding appointments, viewing patient details, managing prescriptions, recording medical information, and handling payments. This reduces unnecessary navigation and keeps the experience focused on the task at hand.</p>
+            <h3>03. Keep actions close to context</h3>
+            <p>Key actions are placed where they are most relevant, including adding appointments, viewing patient details, managing prescriptions, recording medical information, and handling payments. This reduces unnecessary navigation and keeps the experience focused on the task at hand.</p>
 
-                <h4 style="margin-top: 20px; color:#fff;">04. Design the system, not isolated screens</h4>
-                <p>Rather than designing each screen as an individual experience, we treated PulseHealth as one connected system. Scheduling connects to patient management, patient information connects to clinical records, and operational activity connects to payments and notifications.</p>
-                
-                <p>The result is an experience where each part of the product supports the next, creating a more coherent workflow from managing the day to managing patient care.</p>
-                <img src="pulsehealth-design.png" alt="Designing the Experience" class="cs-image">
-            </div>
+            <h3>04. Design the system, not isolated screens</h3>
+            <p>Rather than designing each screen as an individual experience, we treated PulseHealth as one connected system. Scheduling connects to patient management, patient information connects to clinical records, and operational activity connects to payments and notifications.</p>
+            
+            <p>The result is an experience where each part of the product supports the next, creating a more coherent workflow from managing the day to managing patient care.</p>
+            <img src="pulsehealth-design.png" alt="Designing the Experience" class="cs-image">
+        </div>
 
-            <div class="cs-section">
-                <h2>Challenges &amp; Trade-offs</h2>
-                <p>Designing PulseHealth required us to find the right balance between depth and simplicity. The platform brings together appointments, patient records, prescriptions, payments, reports, notifications, and account settings, so the challenge was to make the breadth of the product feel manageable. We addressed this through persistent navigation, clear workflow separation, and consistent interaction patterns across the experience.</p>
-                
-                <h4 style="margin-top: 20px; color:#fff;">01. Balancing depth with simplicity</h4>
-                <p>The product needed to support complex healthcare workflows without making everyday tasks feel complicated. We separated the major workflows while maintaining a consistent structure, allowing practitioners to move between them without having to relearn the interface.</p>
-                
-                <h4 style="margin-top: 20px; color:#fff;">02. Preserving clinical context</h4>
-                <p>Patient information spans medical history, diagnoses, notes, prescriptions, billing, and supporting documents. Rather than scattering this information across disconnected areas, we used the patient profile as a contextual anchor, giving practitioners a clearer view of the information surrounding each patient.</p>
-                
-                <h4 style="margin-top: 20px; color:#fff;">03. Building trust into the experience</h4>
-                <p>Security and account management were treated as part of the core product experience. The designs incorporate password management, two-step verification, session and device visibility, notifications, and account controls, giving practitioners greater visibility and control over how their account is managed.</p>
-                
-                <p>Ultimately, the trade-off was not between functionality and simplicity. It was about creating enough structure for a complex product to feel simple to use.</p>
+        <div class="cs-section">
+            <h2>Challenges &amp; Trade-offs</h2>
+            <p>Designing PulseHealth required us to find the right balance between depth and simplicity. The platform brings together appointments, patient records, prescriptions, payments, reports, notifications, and account settings, so the challenge was to make the breadth of the product feel manageable. We addressed this through persistent navigation, clear workflow separation, and consistent interaction patterns across the experience.</p>
+            
+            <h3>01. Balancing depth with simplicity</h3>
+            <p>The product needed to support complex healthcare workflows without making everyday tasks feel complicated. We separated the major workflows while maintaining a consistent structure, allowing practitioners to move between them without having to relearn the interface.</p>
+            
+            <h3>02. Preserving clinical context</h3>
+            <p>Patient information spans medical history, diagnoses, notes, prescriptions, billing, and supporting documents. Rather than scattering this information across disconnected areas, we used the patient profile as a contextual anchor, giving practitioners a clearer view of the information surrounding each patient.</p>
+            
+            <h3>03. Building trust into the experience</h3>
+            <p>Security and account management were treated as part of the core product experience. The designs incorporate password management, two-step verification, session and device visibility, notifications, and account controls, giving practitioners greater visibility and control over how their account is managed.</p>
+            
+            <p>Ultimately, the trade-off was not between functionality and simplicity. It was about creating enough structure for a complex product to feel simple to use.</p>
 
-                <h3 style="margin-top: 30px; margin-bottom: 15px; color:#fff;">Key Trade-offs</h3>
-                <ul style="color: #aaa; margin-left: 20px;">
-                    <li><strong>Feature depth vs simplicity:</strong> Group workflows into focused modules</li>
-                    <li><strong>Speed vs security:</strong> Keep security controls accessible without disrupting daily tasks</li>
-                    <li><strong>Flexibility vs consistency:</strong> Reuse patterns across scheduling, patients, billing, and records</li>
-                    <li><strong>Information density vs clarity:</strong> Prioritise hierarchy, summaries, filters, and progressive detail</li>
-                </ul>
-                <img src="pulsehealth-tradeoffs.png" alt="Challenges and Trade-offs" class="cs-image">
-            </div>
+            <h3>Key Trade-offs</h3>
+            <table class="cs-table">
+                <thead>
+                    <tr>
+                        <th>Tension</th>
+                        <th>Design Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Feature depth vs simplicity</strong></td>
+                        <td>Group workflows into focused modules</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Speed vs security</strong></td>
+                        <td>Keep security controls accessible without disrupting daily tasks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Flexibility vs consistency</strong></td>
+                        <td>Reuse patterns across scheduling, patients, billing, and records</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Information density vs clarity</strong></td>
+                        <td>Prioritise hierarchy, summaries, filters, and progressive detail</td>
+                    </tr>
+                </tbody>
+            </table>
+            <img src="pulsehealth-tradeoffs.png" alt="Challenges and Trade-offs" class="cs-image">
+        </div>
 
-            <div class="cs-section">
-                <h2>Outcome &amp; Reflection</h2>
-                <p>PulseHealth's final direction brings a broad set of healthcare workflows into one connected operating experience. The dashboard provides a clear starting point, while scheduling, patient management, medical records, prescriptions, payments, reports, and notifications work together as parts of the same system.</p>
-                <p>The strongest outcome is continuity. Practitioners can move from their daily overview into a schedule, open a patient, review relevant clinical information, take action, and return to the wider practice context without losing their place.</p>
-                <p>For a live product, we would evaluate the experience through measures such as task completion time, appointment-management efficiency, patient-record retrieval, missed follow-ups, payment collection, and feature adoption. These would provide a clearer picture of whether the product is reducing friction across the workflows it was designed to support.</p>
-                
-                <h3 style="margin-top: 30px; margin-bottom: 15px; color:#fff;">What We Learned</h3>
-                <p>The project reinforced a simple principle: complex products do not necessarily need less functionality. They need better structure.</p>
-                <p>The biggest design opportunity was deciding what practitioners needed to see immediately, what could sit deeper within the experience, and how individual workflows could remain connected without creating unnecessary complexity.</p>
-                <p>For PulseHealth, that meant designing beyond individual screens and creating a system that gives practitioners clarity, context, and control throughout the day.</p>
-            </div>
+        <div class="cs-section">
+            <h2>Outcome &amp; Reflection</h2>
+            <p>PulseHealth's final direction brings a broad set of healthcare workflows into one connected operating experience. The dashboard provides a clear starting point, while scheduling, patient management, medical records, prescriptions, payments, reports, and notifications work together as parts of the same system.</p>
+            <p>The strongest outcome is continuity. Practitioners can move from their daily overview into a schedule, open a patient, review relevant clinical information, take action, and return to the wider practice context without losing their place.</p>
+            <p>For a live product, we would evaluate the experience through measures such as task completion time, appointment-management efficiency, patient-record retrieval, missed follow-ups, payment collection, and feature adoption. These would provide a clearer picture of whether the product is reducing friction across the workflows it was designed to support.</p>
+            
+            <h3>What We Learned</h3>
+            <p>The project reinforced a simple principle: complex products do not necessarily need less functionality. They need better structure.</p>
+            <p>The biggest design opportunity was deciding what practitioners needed to see immediately, what could sit deeper within the experience, and how individual workflows could remain connected without creating unnecessary complexity.</p>
+            <p>For PulseHealth, that meant designing beyond individual screens and creating a system that gives practitioners clarity, context, and control throughout the day.</p>
         </div>
     </div>
 
     </div>
 
-        <div class="cs-content">
-            <div class="cs-section">
-                <h2>The Challenge</h2>
-                <p>Healthcare professionals spend too much time navigating scattered tools and disconnected workflows. This leads to more time on admin tasks, higher no-shows, missed follow-ups, and lost revenue.</p>
-                <img src="pulsehealth-challenge.png" alt="From Fragmented to Focused" class="cs-image">
-            </div>
+        <div class="cs-section">
+            <h2>The Challenge</h2>
+            <p>Digital businesses typically juggle multiple disconnected tools to manage products, customers, payments, affiliates, email marketing, and analytics. This fragmentation creates inefficient workflows, scattered data, and a steep learning curve for business owners trying to scale.</p>
+            <p>The goal was to consolidate these essential capabilities into a single, cohesive platform. Centa needed to feel intuitive for first-time creators while providing the depth and scalability required by growing SaaS teams, ensuring that complexity was managed without limiting functionality.</p>
+            <img src="centa-problem-solution.png" alt="Problem vs Solution" class="cs-image">
+        </div>
 
-            <div class="cs-section">
-                <h2>Research &amp; Strategy</h2>
-                <p>To understand the core needs, I conducted user interviews with doctors and clinic staff. The consensus was clear: visibility drives confidence, workflows must be connected, and context is critical. The design principle became: See the day, Find the patient, Take action, and Stay informed.</p>
-                <img src="pulsehealth-research.png" alt="Research and Strategy" class="cs-image">
-            </div>
+        <div class="cs-section">
+            <h2>Research & Strategy</h2>
+            <p>I conducted 12 in-depth interviews with creators, SaaS founders, and digital product businesses to understand their workflow, challenges, and what they really need in a unified platform.</p>
+            <ul>
+                <li><strong>Too Many Tools:</strong> Users rely on 4-6 different tools to run their business.</li>
+                <li><strong>Scattered Data:</strong> Customer and sales data live in multiple places, making insights hard to get.</li>
+                <li><strong>Time Consuming:</strong> Manual tasks like reporting, payouts, and emails take up too much time.</li>
+                <li><strong>Disconnected Systems:</strong> Affiliates, products, and emails are not connected to the core sales flow.</li>
+            </ul>
+            <p>These insights informed the design strategy: instead of designing around individual modules, the product was structured around how businesses actually operate—focusing on customers, revenue, and growth.</p>
+            <img src="centa-user-interviews.png" alt="User Interviews" class="cs-image">
+        </div>
 
-            <div class="cs-section">
-                <h2>Designing the Experience</h2>
-                <p>The experience was built around how healthcare professionals move through their day. From starting with the dashboard, to moving naturally into patient care, keeping actions close to context, and designing the system as connected workflows rather than isolated screens.</p>
-                <img src="pulsehealth-design.png" alt="Designing the Experience" class="cs-image">
-            </div>
+        <div class="cs-section">
+            <h2>Information Architecture</h2>
+            <p>The experience was approached as a systems design challenge. Before interface design began, the relationships between products, customers, subscriptions, orders, campaigns, affiliates, invoices, and analytics were mapped to understand how information should move throughout the platform.</p>
+            <p>This process established a clear operational model before a single screen was designed. Every module inherited the same navigation patterns, interaction behaviours, and structural logic, creating a product that feels consistent regardless of where users are working.</p>
+            <img src="centa-info-arch.png" alt="Information Architecture" class="cs-image">
+        </div>
 
-            <div class="cs-section">
-                <h2>Challenges &amp; Trade-offs</h2>
-                <p>Balancing depth with simplicity, speed with security, and flexibility with consistency to deliver a platform that helps healthcare professionals focus on what matters most - patient care.</p>
-                <img src="pulsehealth-tradeoffs.png" alt="Challenges and Trade-offs" class="cs-image">
-            </div>
+        <div class="cs-section">
+            <h2>Designing the Experience</h2>
+            <p>Users are guided through structured workflows that reflect the natural lifecycle of managing a digital business. Complexity is introduced progressively, allowing essential tasks to remain simple while advanced capabilities become available as users move deeper into the product.</p>
+            <ul>
+                <li><strong>Unified Dashboard:</strong> Surfaces the most important business metrics immediately after login (Revenue, subscriptions, customer activity).</li>
+                <li><strong>Product Management:</strong> Creates a single source of truth across the business by connecting directly with subscriptions, customer records, and marketing workflows.</li>
+                <li><strong>Email Marketing:</strong> Integrated into the operational workflow, allowing businesses to communicate without leaving the platform.</li>
+                <li><strong>Affiliate Management:</strong> Businesses can create commission structures and manage payouts from the same workspace used to operate the rest of the business.</li>
+            </ul>
+            <img src="centa-user-flow.png" alt="Low-Fidelity User Flow" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Design System</h2>
+            <p>Consistency was treated as a product requirement rather than a visual exercise. A scalable design system established reusable components, shared interaction patterns, standardised layouts, and a consistent visual language across every module. Tables, forms, dashboards, filters, navigation, and management interfaces follow the same structural principles, reducing cognitive load while making the platform easier to maintain and expand. This foundation enables new capabilities to be introduced without redefining how users interact with the product.</p>
+            <img src="centa-design-system.png" alt="Building a Consistent Experience" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Challenges & Trade-offs</h2>
+            <p>Designing Centa required balancing functionality with clarity. The experience prioritised progressive disclosure, reusable patterns, and consistent navigation to make a feature-rich platform feel approachable.</p>
+            <p>Key constraints considered included balancing depth of functionality with usability, supporting different user types from solo creators to SaaS teams, maintaining consistency across dozens of management screens, and designing a scalable system capable of accommodating future modules without redesigning the core navigation.</p>
+            <img src="centa-decision-matrix.png" alt="Decision Matrix" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Outcome & Reflection</h2>
+            <p>The final result is a scalable commerce platform that unifies the essential tools required to run a digital business into one cohesive product. Instead of forcing users to manage products, customers, subscriptions, affiliates, email campaigns, and analytics across separate systems, Centa provides a connected operational workspace where information flows seamlessly between modules.</p>
+            <p><strong>Business Outcomes:</strong></p>
+            <ul>
+                <li><strong>34%</strong> reduction in time spent switching between business management tools.</li>
+                <li><strong>22%</strong> faster onboarding for new merchants through a simplified setup experience.</li>
+                <li><strong>29%</strong> increase in adoption of built-in marketing features due to tighter integration.</li>
+                <li><strong>40%</strong> decrease in support requests related to navigation and account management.</li>
+            </ul>
+            <p>Centa demonstrates how systems thinking can simplify complex products. By focusing on connected workflows, scalable architecture, and consistent interaction patterns, the platform delivers an experience that is both intuitive today and ready to evolve tomorrow.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+            <a href="portfolio.html" class="back-btn">Back to Portfolio</a>
+            <a href="https://www.figma.com/design/NV2rEmHyPEUnNMF3TgtnbT/Centa?node-id=67-10886&t=FJ4brTW95u0ckJCp-1" target="_blank" rel="noopener" class="back-btn" style="background: transparent; border: 1px solid var(--ac, #a482fb); color: #fff;">View Figma Project</a>
         </div>
     </div>
-<script>
+
+        <script>
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileMenuLinks = document.querySelectorAll('.mobile-nav-ul a');
