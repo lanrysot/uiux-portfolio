@@ -2187,13 +2187,23 @@
      }
 
      .hero-stats {
-         flex-direction: column
-     }
-
-     .h-stat {
-         border-right: none;
-         border-bottom: 1px solid var(--b)
-     }
+        flex-direction: row;
+    }
+    .h-stat {
+        border-right: 1px solid var(--b);
+        border-bottom: none;
+        padding: 12px 6px;
+        text-align: center;
+    }
+    .h-stat:last-child {
+        border-right: none;
+    }
+    .h-stat-num {
+        font-size: 18px;
+    }
+    .h-stat-label {
+        font-size: 9px;
+    }
 
      .proc-grid {
          grid-template-columns: 1fr
