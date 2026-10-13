@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occula - AI App Builder | Case Study</title>
+    <link rel="stylesheet" href="style.css?v=26">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .case-study-container {
+            max-width: 1000px;
+            margin: 120px auto 60px;
+            padding: 0 5%;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .cs-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .cs-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .cs-subtitle {
+            font-size: 1.2rem;
+            color: #aaa;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cs-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .meta-item h4 {
+            font-size: 0.9rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .meta-item p {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .cs-section {
+            margin-bottom: 60px;
+        }
+        .cs-section h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+            color: var(--ac, #a482fb);
+        }
+        .cs-section h3 {
+            font-size: 1.4rem;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .cs-section p {
+            margin-bottom: 20px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section li {
+            margin-bottom: 10px;
+        }
+        .cs-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .cs-quote {
+            border-left: 4px solid var(--ac, #a482fb);
+            padding: 20px 24px;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.03);
+            border-radius: 0 8px 8px 0;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #fff;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 24px;
+            background: var(--ac, #a482fb);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+        }
+        .back-btn:hover {
+            opacity: 0.8;
+        }
+        @media (max-width: 768px) {
+            .cs-title {
+                font-size: 2rem;
+            }
+            .cs-subtitle {
+                font-size: 1rem;
+            }
+            .cs-section h2 {
+                font-size: 1.5rem;
+            }
+            .case-study-container {
+                margin: 100px auto 40px;
+                padding: 0 20px;
+            }
+            .cs-meta {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                padding: 20px;
+            }
+            .back-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+  <nav id="nav">
+      <a href="./index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
+      <ul class="nav-links">
+          <li><a href="./index.html#reel">Case Studies</a></li>
+          <li><a href="./index.html#services">Services</a></li>
+          <li><a href="./index.html#process">Process</a></li>
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#reviews">Reviews</a></li>
+      </ul>
+      <a href="https://cal.com/OLANREWAJU-SULAIMON" class="nav-cta">Start a Project ?</a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-ul">
+          <li><a href="./index.html#reel">Case Studies</a></li>
+          <li><a href="./index.html#services">Services</a></li>
+          <li><a href="./index.html#process">Process</a></li>
+          <li><a href="./index.html#about">About</a></li>
+          <li><a href="./index.html#reviews">Reviews</a></li>
+          <li><a class="ncta" href="https://cal.com/OLANREWAJU-SULAIMON">Start a Project</a></li>
+      </ul>
+  </div>
+
+    <div class="case-study-container">
+        <div class="cs-header">
+            <h1 class="cs-title">Occula</h1>
+            <p class="cs-subtitle"><strong>Think Faster. Build Faster.</strong><br><br>Occula is an AI app builder that helps people turn ideas into digital products through conversation. The experience brings prompting, project management, files, skills, design guidance, connectors, code generation, and publishing into one unified workspace.</p>
+        </div>
+
+        <img src="occula-strategy.png" alt="Occula Hero Preview" class="cs-image">
+
+        <div class="cs-meta">
+            <div class="meta-item">
+                <h4>Role</h4>
+                <p>Product Designer</p>
+            </div>
+            <div class="meta-item">
+                <h4>Platform</h4>
+                <p>Web Application</p>
+            </div>
+            <div class="meta-item">
+                <h4>Focus</h4>
+                <p>Product Strategy, UX/UI, Interaction Design</p>
+            </div>
+            <div class="meta-item">
+                <h4>Timeline</h4>
+                <p>Product Design Phase</p>
+            </div>
+        </div>
+
+        <div class="cs-section">
+            <h2>01. The Challenge</h2>
+            <p>Building an app should start with an idea, not a technical workflow.</p>
+            <p>Occula brings together AI conversation, projects, files, skills, design guidance, connectors, and generated outputs in one workspace. The interface is designed to let users begin with a simple prompt and progressively add context as they build.</p>
+            <p>The core design challenge was to make this vast level of capability feel approachable without hiding the controls that give users direction and ownership.</p>
+            <p>Instead of making users navigate a complex creation process upfront, the experience centers around one intuitive question: <strong>“What will you build today?”</strong></p>
+            <p>From there, users can attach files or photos, enhance their prompt, apply specialized skills and styles, connect external tools, and establish design or writing guidelines.</p>
+            
+            <div class="cs-quote">“How might we make AI app building feel as natural as having a conversation while still giving users meaningful control over the result?”</div>
+
+            <h3>The Shift</h3>
+            <table class="cs-table">
+                <thead>
+                    <tr>
+                        <th>Workflow Model</th>
+                        <th>Stages</th>
+                        <th>Experience Impact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Traditional Workflow</strong></td>
+                        <td>Idea &rarr; Plan &rarr; Design &rarr; Develop &rarr; Deploy</td>
+                        <td>Multiple disconnected tools. Steeper learning curve. Slower progress.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>The Occula Way</strong></td>
+                        <td>Idea &rarr; Prompt &rarr; Context &rarr; Generate &rarr; Iterate &rarr; Build</td>
+                        <td>One unified workspace. Less friction. More creation.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>The goal was not simply to add more AI capabilities. It was to create a clear, elegant experience where those capabilities appear at the exact right moment.</p>
+            <img src="occula-challenge.png" alt="The Traditional Way vs The Occula Way" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>02. Research &amp; Strategy</h2>
+            <p><strong>Finding the right balance between simplicity and control</strong></p>
+            <p>Occula is built around a foundational principle: users should be able to start immediately with an idea, while maintaining complete control to shape what the AI creates.</p>
+            <p>The product integrates several capabilities into the creation flow: file uploads, prompt enhancement, Skills, Connectors, style selection, UI guidelines, writing guidelines, and mobile design guidance.</p>
+            
+            <h3>Key Design Observations</h3>
+            <ul>
+                <li><strong>01. Starting friction:</strong> The experience begins with a direct, conversational prompt: <em>“What will you build today?”</em> This keeps the first interaction laser-focused on the user's goal rather than technical setup.</li>
+                <li><strong>02. Context matters:</strong> Users can attach files, screenshots, or design references and enhance their prompts before generating. This gives the AI richer context to produce accurate output.</li>
+                <li><strong>03. Control should be available when needed:</strong> Skills, Connectors, styles, and design guidelines provide powerful ways to steer the creation process without cluttering the initial starting point.</li>
+            </ul>
+
+            <h3>Product Strategy</h3>
+            <ul>
+                <li><strong>01. Start with intent:</strong> Let users describe what they want to create first.</li>
+                <li><strong>02. Keep context close:</strong> Make supporting information and reference material available within the creation flow.</li>
+                <li><strong>03. Reveal complexity progressively:</strong> Keep advanced capabilities accessible without overwhelming the initial experience.</li>
+                <li><strong>04. Make AI collaborative:</strong> Give users opportunities to guide and refine the output instead of treating generation as a single, static action.</li>
+            </ul>
+            <p>The result is a product strategy centered on conversation as the entry point and control as the supporting layer.</p>
+            <img src="occula-strategy.png" alt="Research and Strategy - Finding the right balance between simplicity and control" class="cs-image">
+
+            <h3>User Persona — The Ambitious Builder</h3>
+            <p>To guide design decisions, I defined a working persona around the creator Occula is designed to empower. <strong>The Ambitious Builder</strong> has a clear product vision and wants to move from concept to working product quickly without getting bogged down by technical friction.</p>
+            <p>This persona framed the core design tension: how can Occula deliver the speed and leverage of AI while giving creators the control they need to shape the outcome? This directly informed how prompting, context, Skills, Connectors, and guidelines were structured.</p>
+            <img src="occula-persona.png" alt="User Persona - The Ambitious Builder" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>03. Designing the Experience</h2>
+            <p><strong>From a simple prompt to a complete product workflow</strong></p>
+            <p>The experience is designed around a clear progression: creators start with an idea, add supporting context, generate an output, and iterate through natural conversation. The interface keeps the primary creation area front-and-center while making supporting capabilities available contextually.</p>
+            
+            <ul>
+                <li><strong>01. Start with the idea:</strong> The home experience immediately asks <em>“What will you build today?”</em>, removing unnecessary friction and putting the creator's vision first.</li>
+                <li><strong>02. Add the right context:</strong> Users can attach files, photos, enhance prompts, and apply Skills, Connectors, styles, and design rules without disrupting their flow.</li>
+                <li><strong>03. Generate and iterate:</strong> Rather than treating AI output as final, the interface fosters an iterative conversation where users refine, test, and polish.</li>
+                <li><strong>04. Manage the work:</strong> Projects, Search, and Recents give creators immediate access to past builds as their workspace expands.</li>
+            </ul>
+
+            <h3>The Experience Model</h3>
+            <table class="cs-table">
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>User Action</th>
+                        <th>System Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1. Idea</strong></td>
+                        <td>Defines intent and problem to solve</td>
+                        <td>Provides clean, focused entry point</td>
+                    </tr>
+                    <tr>
+                        <td><strong>2. Prompt</strong></td>
+                        <td>Describes app concept in natural language</td>
+                        <td>Suggests prompt enhancements &amp; parameters</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3. Context</strong></td>
+                        <td>Attaches files, selects skills &amp; connectors</td>
+                        <td>Integrates external tools &amp; design guidelines</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4. Generate</strong></td>
+                        <td>Triggers build process</td>
+                        <td>Generates UI designs, code, and live preview</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5. Iterate</strong></td>
+                        <td>Tests output and provides conversational feedback</td>
+                        <td>Refines code, adjusts styles, and regenerates</td>
+                    </tr>
+                    <tr>
+                        <td><strong>6. Build</strong></td>
+                        <td>Finalizes and publishes application</td>
+                        <td>Deploys live product and saves to Projects</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>User Flow</h3>
+            <p>The user flow maps how a creator moves through Occula, from entering an idea to generating, refining, and publishing a product. The flow keeps the primary path simple while allowing users to add context through files, Skills, Connectors, and design guidelines.</p>
+            <p>A key part of the experience is the <strong>refinement loop</strong>. Users can review generated outputs, provide follow-up instructions, adjust context, and iterate until the product matches their standards.</p>
+            <img src="occula-user-flow.png" alt="User Flow - From initial idea to published product" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>04. Challenges &amp; Trade-offs</h2>
+            <p><strong>Designing for flexibility without creating complexity</strong></p>
+            <p>Occula unites a broad set of capabilities into one product. The challenge was not simply deciding what features to include, but determining how much complexity users should see at each stage.</p>
+            
+            <table class="cs-table">
+                <thead>
+                    <tr>
+                        <th>Challenge</th>
+                        <th>Design Decision</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>01. Balancing simplicity and depth</strong><br>The creation screen needs to feel approachable, while advanced features (Skills, Connectors, guidelines) remain accessible.</td>
+                        <td><strong>Contextual Controls:</strong> Keep the primary interaction focused on the conversational prompt and make advanced controls contextual and progressive.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>02. Managing a growing workspace</strong><br>As users build more apps, finding and organizing past work becomes crucial.</td>
+                        <td><strong>Structured Workspace:</strong> Separate creation from project management while keeping Projects, Search, and Recents easily accessible in the primary navigation.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>03. Supporting different user levels</strong><br>First-time builders need a simple prompt; power users need granular control over styles, connectors, and tokens.</td>
+                        <td><strong>Progressive Disclosure:</strong> Allow beginners to launch with pure conversation while giving power users quick access to architectural levers.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cs-quote">Simple enough to start. Powerful enough to continue.</div>
+            <img src="occula-challenges.png" alt="Challenges - Designing for flexibility without creating complexity" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Outcome &amp; Reflection</h2>
+            <p><strong>A clearer path from idea to product</strong></p>
+            <p>The final experience brings Occula's capabilities into one unified creation workflow. Creators can start with a simple conversation, inject rich context when needed, refine the output collaboratively with AI, and manage multiple digital products from a single workspace.</p>
+
+            <h3>What Changed</h3>
+            <ul>
+                <li><strong>From Fragmented Creation:</strong> Multiple disconnected stages, disparate tools, and tedious technical overhead.</li>
+                <li><strong>To Conversational Creation:</strong> A focused starting point with supporting capabilities available at the moment of need.</li>
+                <li><strong>From Isolated Projects:</strong> Limited visibility as work expands across tools.</li>
+                <li><strong>To a Structured Workspace:</strong> Projects, Search, and Recents make navigating, iterating, and maintaining builds effortless.</li>
+            </ul>
+
+            <h3>Design Impact</h3>
+            <p>The defining outcome was establishing a clear, intuitive relationship between intent, context, generation, and iteration. Instead of overwhelming creators upfront, Occula introduces advanced tools dynamically as they become relevant to the workflow.</p>
+
+            <h3>What I Learned</h3>
+            <p>Designing an AI product is not merely about showcasing what an AI model can do. It is about understanding <strong>how much control the user needs</strong> and <strong>when that control should appear</strong>.</p>
+            <p>For Occula, this meant starting with frictionless simplicity while providing the depth and architectural precision needed to build real, scalable digital products.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
+            <a href="portfolio.html" class="back-btn">Back to Portfolio</a>
+            <a href="https://www.figma.com/proto/RPo5PwwoKuxCkbQBqGAJgR/Occula---AI-App-Builder?node-id=10065-18181&p=f&t=PbVaz5W0feB5EOqh-1&scaling=scale-down&content-scaling=responsive&page-id=2001%3A3&starting-point-node-id=10065%3A18112&show-proto-sidebar=1" target="_blank" rel="noopener" class="back-btn" style="background: transparent; border: 1px solid var(--ac, #a482fb); color: #fff;">View Prototype</a>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-nav-ul a');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
