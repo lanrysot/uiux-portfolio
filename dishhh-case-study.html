@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dishhh - Food Delivery Platform | Case Study</title>
+    <link rel="stylesheet" href="style.css?v=38">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .case-study-container {
+            max-width: 1000px;
+            margin: 120px auto 60px;
+            padding: 0 5%;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .cs-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .cs-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .cs-subtitle {
+            font-size: 1.25rem;
+            color: #bbb;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cs-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .meta-item h4 {
+            font-size: 0.9rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .meta-item p {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #eee;
+            margin: 0;
+        }
+        .cs-section {
+            margin-bottom: 60px;
+        }
+        .cs-section h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+            color: var(--ac, #a482fb);
+        }
+        .cs-section h3 {
+            font-size: 1.35rem;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .cs-section p {
+            margin-bottom: 20px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section p.section-sub {
+            font-size: 1.15rem;
+            color: #e0d8ff;
+            font-weight: 500;
+            margin-top: -12px;
+            margin-bottom: 20px;
+        }
+        .cs-section ul {
+            margin-bottom: 24px;
+            padding-left: 24px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section li {
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+        .cs-section li strong {
+            color: #fff;
+        }
+        .cs-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 32px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: block;
+        }
+        .cs-quote {
+            border-left: 4px solid var(--ac, #a482fb);
+            padding: 20px 24px;
+            margin: 28px 0;
+            background: rgba(255,255,255,0.03);
+            border-radius: 0 8px 8px 0;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #fff;
+            line-height: 1.5;
+        }
+        .flow-strip {
+            background: rgba(164, 130, 251, 0.08);
+            border: 1px solid rgba(164, 130, 251, 0.25);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-weight: 500;
+            color: #fff;
+            overflow-x: auto;
+            white-space: nowrap;
+            font-size: 1.05rem;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--ac, #a482fb);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+        }
+        .back-btn:hover {
+            opacity: 0.85;
+        }
+        @media (max-width: 768px) {
+            .cs-title {
+                font-size: 2rem;
+            }
+            .cs-subtitle {
+                font-size: 1rem;
+            }
+            .cs-section h2 {
+                font-size: 1.5rem;
+            }
+            .case-study-container {
+                margin: 100px auto 40px;
+                padding: 0 20px;
+            }
+            .cs-meta {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                padding: 20px;
+            }
+            .back-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav id="nav">
+        <a href="./index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+        </ul>
+        <a href="https://cal.com/OLANREWAJU-SULAIMON" class="nav-cta">Start a Project ?</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-ul">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+            <li><a class="ncta" href="https://cal.com/OLANREWAJU-SULAIMON">Start a Project</a></li>
+        </ul>
+    </div>
+
+    <div class="case-study-container">
+        <div class="cs-header">
+            <h1 class="cs-title">Dishhh</h1>
+            <p class="cs-subtitle">A simpler way to discover, order, and track food</p>
+        </div>
+
+        <img src="dishhh-hero.png" alt="Dishhh - A simpler way to discover, order, and track food" class="cs-image">
+
+        <div class="cs-meta">
+            <div class="meta-item">
+                <h4>Role</h4>
+                <p>Product Designer</p>
+            </div>
+            <div class="meta-item">
+                <h4>Timeline</h4>
+                <p>2 Months</p>
+            </div>
+            <div class="meta-item">
+                <h4>Platform</h4>
+                <p>Mobile</p>
+            </div>
+            <div class="meta-item">
+                <h4>Team</h4>
+                <p>Product, Engineering, and QA</p>
+            </div>
+        </div>
+
+        <div class="cs-section">
+            <h2>Overview</h2>
+            <p>Dishhh is a food delivery experience designed to help users move from discovering food to receiving their order with less friction.</p>
+            <p>I worked across the core experience, including onboarding, restaurant discovery, search and filters, food details, cart, checkout, payment, order tracking, reviews, and account management.</p>
+            <p>The core design challenge was to make a food delivery journey feel simple and predictable, while giving users enough information to confidently choose a restaurant, customise their order, complete payment, and track delivery.</p>
+            <p><strong>Design focus:</strong> Discovery • Ordering • Checkout • Tracking • Retention</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>The Problem</h2>
+            <p class="section-sub">Food delivery should feel effortless, not overwhelming</p>
+            <p>The challenge was to create a food delivery experience that helps users find what they want quickly, make confident choices, and complete an order without unnecessary friction.</p>
+            <p>The journey spans several decisions: finding restaurants, comparing food, checking delivery details, managing the cart, choosing payment, and tracking the order.</p>
+
+            <p>The key question became:</p>
+            <div class="cs-quote">“How might we make ordering food feel simple from discovery to delivery?”</div>
+
+            <p><strong>I focused on three areas:</strong></p>
+            <ul>
+                <li><strong>Discovery:</strong> Help users find relevant restaurants and meals quickly.</li>
+                <li><strong>Decision-making:</strong> Make prices, ratings, delivery times, and food details easy to understand.</li>
+                <li><strong>Order confidence:</strong> Keep users informed through checkout, payment, and delivery tracking.</li>
+            </ul>
+
+            <p>The goal was to turn a multi-step ordering process into a clear, connected experience.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>Research &amp; Discovery</h2>
+            <p class="section-sub">Understanding how people choose and order food</p>
+            <p>I focused my discovery around the complete ordering journey, from finding a restaurant to receiving the order.</p>
+            <p>I reviewed the experience across key areas:</p>
+            <ul>
+                <li><strong>Discovery:</strong> Search, categories, filters, promotions, and nearby restaurants.</li>
+                <li><strong>Decision-making:</strong> Ratings, prices, delivery times, food details, and reviews.</li>
+                <li><strong>Ordering:</strong> Item customisation, cart, address, promotions, and checkout.</li>
+                <li><strong>Delivery:</strong> Payment confirmation, order status, tracking, and delivery updates.</li>
+                <li><strong>Post-order:</strong> Order history, receipts, reviews, and reordering.</li>
+            </ul>
+            <p>This helped me identify the key opportunities: make discovery easier, reduce decision friction, simplify checkout, and keep users informed after placing an order.</p>
+
+            <img src="dishhh-research.png" alt="Research Methods & Insights - Dishhh" class="cs-image">
+
+            <img src="dishhh-persona.png" alt="User Persona - Amaka Okafor - Dishhh" class="cs-image">
+
+            <h3>Defining the Opportunity</h3>
+            <p class="section-sub">From research to design direction</p>
+            <p>The research pointed to four clear opportunities:</p>
+            <ul>
+                <li><strong>01. Discover faster:</strong> Help users find relevant food and restaurants with less effort.</li>
+                <li><strong>02. Choose confidently:</strong> Make ratings, prices, food details, and delivery information easy to scan.</li>
+                <li><strong>03. Checkout simply:</strong> Reduce friction between adding food to the cart and completing payment.</li>
+                <li><strong>04. Stay informed:</strong> Give users clear updates from order confirmation through delivery.</li>
+            </ul>
+
+            <div class="cs-quote">“Opportunity: Create a food delivery experience that makes discovering, ordering, and tracking food feel simple and connected.”</div>
+
+            <img src="dishhh-flow.png" alt="User Flow - From Cravings to Delivery - Dishhh" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Exploration &amp; Ideation</h2>
+            <p class="section-sub">Exploring a better way to order</p>
+            <p>I explored different ways to make the food ordering journey feel faster and more intuitive.</p>
+            <p>The focus was on:</p>
+            <ul>
+                <li><strong>Faster discovery</strong> through search, categories, and restaurant browsing.</li>
+                <li><strong>Better food decisions</strong> by presenting key meal and restaurant information clearly.</li>
+                <li><strong>A smoother checkout</strong> with fewer unnecessary decisions between cart and payment.</li>
+                <li><strong>Clearer delivery tracking</strong> so users know what is happening after placing an order.</li>
+            </ul>
+            <p>I used these directions to shape a flow that moves naturally from Discover → Explore → Choose → Order → Checkout → Track → Enjoy.</p>
+            <p>The final direction prioritised simplicity while keeping the information users need visible at each stage.</p>
+
+            <img src="dishhh-sketch.png" alt="User Flow Sketch - Dishhh" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Solution: Structure &amp; Flow</h2>
+            <p class="section-sub">From discovery to delivery</p>
+            <p>I structured the experience around a simple progression:</p>
+            <div class="flow-strip">
+                Discover &rarr; Explore &rarr; Choose &rarr; Order &rarr; Checkout &rarr; Track &rarr; Enjoy
+            </div>
+            <p>Each step has a clear purpose, helping users move forward without unnecessary complexity.</p>
+            <p>The flow connects restaurant discovery, food selection, cart management, payment, order confirmation, and delivery tracking into one continuous journey.</p>
+            <p>The focus was to make the next action obvious while keeping important information accessible throughout the experience.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>Validation</h2>
+            <p class="section-sub">Making the flow easier to understand</p>
+            <p>I validated the key ordering journey by reviewing the main user tasks across discovery, food selection, cart, checkout, and order tracking.</p>
+            <p>I focused on whether users could:</p>
+            <ul>
+                <li>Find a suitable restaurant or meal</li>
+                <li>Understand food and delivery information</li>
+                <li>Add and manage items in the cart</li>
+                <li>Complete checkout with confidence</li>
+                <li>Understand their order status after payment</li>
+            </ul>
+            <p>The validation helped refine the information hierarchy, interaction patterns, and flow between screens, keeping the experience focused on the user's next action.</p>
+            <p>The final direction aimed to make ordering feel clear, predictable, and easy from start to finish.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>Outcomes &amp; Impact</h2>
+            <p class="section-sub">A more seamless food ordering experience</p>
+            <p>The final design brought the core experience into one connected journey, from discovering food to tracking delivery.</p>
+            <p>The main improvements focused on:</p>
+            <ul>
+                <li><strong>Faster discovery:</strong> Clearer restaurant and food browsing.</li>
+                <li><strong>Confident decisions:</strong> Key food, rating, price, and delivery information presented clearly.</li>
+                <li><strong>Simpler checkout:</strong> A focused path from cart to payment.</li>
+                <li><strong>Better visibility:</strong> Clear order status and delivery tracking after checkout.</li>
+            </ul>
+            <p>The result is an experience designed to make food ordering simpler, more transparent, and easier to navigate from start to finish.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>Reflection</h2>
+            <p class="section-sub">Designing for the complete ordering experience</p>
+            <p>Dishhh reinforced the importance of looking beyond the individual screen and designing the entire customer journey.</p>
+            <p>The project pushed me to think carefully about how discovery, decision-making, checkout, payment, and delivery tracking connect together.</p>
+            <p>My biggest takeaway was that a good food delivery experience should make users feel informed and in control at every step.</p>
+            <p>If I continued the project, I would further validate the core flows with real users and refine the experience based on their behaviour and feedback.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
+            <a href="portfolio.html" class="back-btn">Back to Portfolio</a>
+            <a href="https://www.figma.com/proto/YD0moW7TmyA9nnY9sCFEQ0/Dishhh?node-id=1-3330&p=f&t=k5VOxOoEsCOK9OmN-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A264&starting-point-node-id=1%3A3305" target="_blank" rel="noopener" class="back-btn" style="background: transparent; border: 1px solid var(--ac, #a482fb); color: #fff;">View Prototype</a>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-nav-ul a');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
