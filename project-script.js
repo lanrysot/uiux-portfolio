@@ -152,6 +152,23 @@
           results: [{ n: "7", l: "Flow Milestones" }, { n: "4", l: "Core Pillars" }, { n: "100%", l: "End-to-End Tracking" }],
           tools: ["Figma", "Design Systems", "Prototyping", "User Research"],
           caseStudyUrl: "dishhh-case-study.html"
+        },
+        {
+          cat: "Fintech App", client: "Vesta",
+          title: "Vesta — Investment & Wealth Management App",
+          tagline: "A simpler way to invest and manage your portfolio, turning complex financial actions into a structured, trustworthy mobile experience.",
+          details: [
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>', title: 'Project Overview', content: 'Vesta is a mobile investment experience designed to make investing easier to understand, start, and manage from signup to portfolio growth.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>', title: 'The Problem', content: 'Investing introduces unfamiliar terminology, verification friction, and market anxiety. The challenge was making complex fintech actions feel accessible without losing depth.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>', title: 'Research & Discovery', content: 'Audited competitors (Robinhood, Fidelity, eToro), developed proto-personas, and mapped user journeys to uncover friction points during verification and funding.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>', title: 'Core Flow', content: 'Structured a continuous progression: Discover → Sign Up → Verify → Fund → Invest → Track → Manage, ensuring users know what happens next at every step.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>', title: 'Outcomes & Design System', content: 'Delivered guided identity verification, transparent funding with upfront fees, contextual stock insights, and comprehensive portfolio tracking.' }
+          ],
+          before: "Fragmented financial tools with overwhelming verification steps, hidden fees, and complex market charts causing first-time drop-offs.",
+          after: "A structured, trustworthy investment experience with guided verification, transparent funding, and clear portfolio performance monitoring.",
+          results: [{ n: "7", l: "Flow Milestones" }, { n: "5", l: "Core Pillars" }, { n: "100%", l: "Verified Continuity" }],
+          tools: ["Figma", "Design Systems", "Prototyping", "Fintech UX"],
+          caseStudyUrl: "vesta-case-study.html"
         }
       ];
 

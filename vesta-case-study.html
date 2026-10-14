@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesta - Investment &amp; Wealth Management App | Case Study</title>
+    <link rel="stylesheet" href="style.css?v=39">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .case-study-container {
+            max-width: 1000px;
+            margin: 120px auto 60px;
+            padding: 0 5%;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .cs-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .cs-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .cs-subtitle {
+            font-size: 1.25rem;
+            color: #bbb;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cs-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .meta-item h4 {
+            font-size: 0.9rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .meta-item p {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #eee;
+            margin: 0;
+        }
+        .cs-section {
+            margin-bottom: 60px;
+        }
+        .cs-section h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+            color: var(--ac, #a482fb);
+        }
+        .cs-section h3 {
+            font-size: 1.35rem;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .cs-section p {
+            margin-bottom: 20px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section p.section-sub {
+            font-size: 1.15rem;
+            color: #e0d8ff;
+            font-weight: 500;
+            margin-top: -12px;
+            margin-bottom: 20px;
+        }
+        .cs-section ul {
+            margin-bottom: 24px;
+            padding-left: 24px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section li {
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+        .cs-section li strong {
+            color: #fff;
+        }
+        .cs-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 32px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: block;
+        }
+        .cs-quote {
+            border-left: 4px solid var(--ac, #a482fb);
+            padding: 20px 24px;
+            margin: 28px 0;
+            background: rgba(255,255,255,0.03);
+            border-radius: 0 8px 8px 0;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #fff;
+            line-height: 1.5;
+        }
+        .flow-strip {
+            background: rgba(164, 130, 251, 0.08);
+            border: 1px solid rgba(164, 130, 251, 0.25);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-weight: 500;
+            color: #fff;
+            overflow-x: auto;
+            white-space: nowrap;
+            font-size: 1.05rem;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--ac, #a482fb);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+        }
+        .back-btn:hover {
+            opacity: 0.85;
+        }
+        @media (max-width: 768px) {
+            .cs-title {
+                font-size: 2rem;
+            }
+            .cs-subtitle {
+                font-size: 1rem;
+            }
+            .cs-section h2 {
+                font-size: 1.5rem;
+            }
+            .case-study-container {
+                margin: 100px auto 40px;
+                padding: 0 20px;
+            }
+            .cs-meta {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                padding: 20px;
+            }
+            .back-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav id="nav">
+        <a href="./index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+        </ul>
+        <a href="https://cal.com/OLANREWAJU-SULAIMON" class="nav-cta">Start a Project ?</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-ul">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+            <li><a class="ncta" href="https://cal.com/OLANREWAJU-SULAIMON">Start a Project</a></li>
+        </ul>
+    </div>
+
+    <div class="case-study-container">
+        <div class="cs-header">
+            <h1 class="cs-title">Vesta</h1>
+            <p class="cs-subtitle">A simpler way to invest and manage your portfolio</p>
+        </div>
+
+        <img src="vesta-hero.png" alt="Vesta - Investment &amp; Wealth Management App" class="cs-image">
+
+        <div class="cs-meta">
+            <div class="meta-item">
+                <h4>Role</h4>
+                <p>Product Designer</p>
+            </div>
+            <div class="meta-item">
+                <h4>Platform</h4>
+                <p>Mobile</p>
+            </div>
+            <div class="meta-item">
+                <h4>Project</h4>
+                <p>Investment &amp; Wealth Management App</p>
+            </div>
+            <div class="meta-item">
+                <h4>Focus</h4>
+                <p>Fintech UX &amp; Design System</p>
+            </div>
+        </div>
+
+        <div class="cs-section">
+            <h2>Overview</h2>
+            <p>Vesta is a mobile investment experience designed to make investing easier to understand, start, and manage.</p>
+            <p>I worked across the core product journey, from account creation and identity verification to funding, stock discovery, trading, portfolio management, and account support.</p>
+            <p>The design challenge was not simply to fit financial features into a mobile app. It was to create a product experience that makes complex financial actions feel clear, structured, and trustworthy.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>The Problem</h2>
+            <p class="section-sub">Making investing feel simpler and more accessible</p>
+            <p>Investing introduces users to unfamiliar processes, financial terminology, verification requirements, funding decisions, and market information.</p>
+            <p>Vesta brings these experiences into one product, creating a broader UX challenge: how do you make a financially complex product feel simple without hiding the information users need to make informed decisions?</p>
+
+            <h3>Key challenges</h3>
+            <ul>
+                <li>Simplify onboarding and verification without making the process feel overwhelming.</li>
+                <li>Make investment information easier to understand so users can evaluate opportunities with greater clarity.</li>
+                <li>Reduce friction around funding and trading by making actions, costs, and confirmations more visible.</li>
+                <li>Create portfolio visibility so users can quickly understand their assets and performance.</li>
+                <li>Build trust throughout the experience through clear security, verification, and transaction states.</li>
+            </ul>
+
+            <h3>Design question</h3>
+            <div class="cs-quote">“How might we make investing feel simple, clear, and trustworthy from signup to portfolio management?”</div>
+
+            <p>The resulting experience connects onboarding, KYC, funding, trading, portfolio management, and account support into one continuous mobile journey.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>Research &amp; Discovery</h2>
+            <p class="section-sub">Understanding the investment journey</p>
+            <p>Rather than looking at individual screens in isolation, I mapped the product as an end-to-end financial journey.</p>
+            <p>The designs revealed five major experience areas:</p>
+            <ul>
+                <li><strong>Onboarding:</strong> Account creation, sign-in, phone verification, country selection, and account purpose.</li>
+                <li><strong>Identity &amp; Security:</strong> Identity verification, document capture, selfie verification, consent, personal details, tax information, and security setup.</li>
+                <li><strong>Investing:</strong> Stock discovery, market information, stock details, buying, selling, and order review.</li>
+                <li><strong>Money Management:</strong> Deposits, payment methods, withdrawals, transaction reviews, and confirmation states.</li>
+                <li><strong>Ongoing Management:</strong> Portfolio tracking, watchlists, notifications, profile settings, FAQs, and support.</li>
+            </ul>
+            <p>This mapping revealed the core opportunity: Make a complex investment journey feel clear, connected, and predictable.</p>
+
+            <h3>Research activities</h3>
+            
+            <h3>Competitor Analysis</h3>
+            <p>I reviewed established investment experiences to understand patterns around onboarding, verification, portfolio visibility, funding, trading, and support.</p>
+            <img src="vesta-competitor.png" alt="Competitor Analysis - Vesta" class="cs-image">
+
+            <h3>Proto-Persona</h3>
+            <p>I created a representative proto-persona to frame the needs, behaviours, motivations, and concerns of the type of investor the product is designed to support.</p>
+            <img src="vesta-persona.png" alt="Proto Persona - David Okafor - Vesta" class="cs-image">
+
+            <h3>Journey Mapping</h3>
+            <p>I mapped the experience from discovering the platform through onboarding, verification, funding, investing, portfolio tracking, and ongoing management.</p>
+            <img src="vesta-journey.png" alt="User Journey Map - Vesta" class="cs-image">
+
+            <h3>Usability Review</h3>
+            <p>I reviewed the key flows to identify potential friction around navigation, information hierarchy, decision-making, and completion of important financial actions.</p>
+            <img src="vesta-usability.png" alt="Usability Review - Vesta" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Exploration &amp; Ideation</h2>
+            <p class="section-sub">Turning friction into design opportunities</p>
+            <p>The research and flow review shifted the design challenge from adding features to reducing uncertainty.</p>
+            <p>I explored ways to make important decisions easier to understand while keeping the experience lightweight and focused.</p>
+
+            <h3>Key directions</h3>
+            <ul>
+                <li><strong>Simplify onboarding:</strong> Make sign-up and sign-in immediately understandable.</li>
+                <li><strong>Clarify verification:</strong> Explain what information is required, why it is needed, and what happens next.</li>
+                <li><strong>Improve funding transparency:</strong> Surface fees, limits, payment methods, and processing states at the right moments.</li>
+                <li><strong>Support investment decisions:</strong> Give users useful stock context before they commit to a purchase.</li>
+                <li><strong>Strengthen navigation:</strong> Make secondary features such as settings, support, and account management easier to discover.</li>
+            </ul>
+
+            <p>The goal was to establish a design system where every important action answers three questions:</p>
+            <div class="cs-quote">“What am I doing? Why does it matter? What happens next?”</div>
+
+            <img src="vesta-ideation.png" alt="Turning Friction into Design Opportunities - Vesta" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Solution: Structure &amp; Flow</h2>
+            <p class="section-sub">A clearer path from signup to investing</p>
+            <p>The experience was structured around a single connected journey:</p>
+            <div class="flow-strip">
+                Discover &rarr; Sign Up &rarr; Verify &rarr; Fund &rarr; Invest &rarr; Track &rarr; Manage
+            </div>
+            <p>Instead of treating onboarding, trading, and portfolio management as separate experiences, the flow creates continuity between them.</p>
+
+            <h3>Key improvements</h3>
+            <ul>
+                <li>Simplified onboarding with a clearer entry point.</li>
+                <li>Guided identity verification with structured steps and clear states.</li>
+                <li>Clear funding flows that communicate amounts, methods, and transaction status.</li>
+                <li>Focused investing flows that bring stock information and trading actions together.</li>
+                <li>Portfolio visibility for monitoring assets, performance, and transactions.</li>
+                <li>Accessible account management for security, preferences, notifications, and support.</li>
+            </ul>
+
+            <p><strong>Goal:</strong> Create a product where users always understand their current step, available actions, and what happens next.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>Outcomes &amp; Impact</h2>
+            <p class="section-sub">A more connected investment experience</p>
+            <p>The final design brings the core investment journey into one cohesive mobile experience.</p>
+
+            <h3>Simpler onboarding</h3>
+            <p>A structured path guides users from account creation through verification.</p>
+
+            <h3>Clearer money management</h3>
+            <p>Deposits and withdrawals make amounts, payment methods, and transaction states visible.</p>
+
+            <h3>More informed investing</h3>
+            <p>Stock information, performance data, charts, and trading actions are brought together within the investment flow.</p>
+
+            <h3>Better portfolio visibility</h3>
+            <p>Users can monitor their assets, performance, profits, and transaction history from one place.</p>
+
+            <h3>Greater transparency</h3>
+            <p>Confirmation, progress, success, and failure states help users understand what is happening throughout the journey.</p>
+
+            <h3>The design outcome</h3>
+            <p>Vesta turns a complex financial workflow into a structured experience built around clarity, confidence, and control.</p>
+            <p>The strongest takeaway from the project was that good fintech UX is not about making financial products feel simplistic. It is about making complexity easier to navigate without taking control away from the user.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
+            <a href="portfolio.html" class="back-btn">Back to Portfolio</a>
+            <a href="https://www.figma.com/proto/MH2JAn04piCJ1t3HoKU37S/Vesta?node-id=1-11208&t=JhDgtmqOngm9yFdd-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A4" target="_blank" rel="noopener" class="back-btn" style="background: transparent; border: 1px solid var(--ac, #a482fb); color: #fff;">View Prototype</a>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-nav-ul a');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    </script>
+</body>
+</html>
