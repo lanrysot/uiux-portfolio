@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rydar - Ride-Hailing & Delivery Platform | Case Study</title>
-    <link rel="stylesheet" href="style.css?v=26">
+    <link rel="stylesheet" href="style.css?v=36">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         .case-study-container {
@@ -26,8 +26,8 @@
             line-height: 1.2;
         }
         .cs-subtitle {
-            font-size: 1.2rem;
-            color: #aaa;
+            font-size: 1.25rem;
+            color: #bbb;
             max-width: 800px;
             margin: 0 auto;
         }
@@ -49,8 +49,10 @@
             margin-bottom: 8px;
         }
         .meta-item p {
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #eee;
+            margin: 0;
         }
         .cs-section {
             margin-bottom: 60px;
@@ -62,9 +64,9 @@
             color: var(--ac, #a482fb);
         }
         .cs-section h3 {
-            font-size: 1.4rem;
-            margin-top: 30px;
-            margin-bottom: 12px;
+            font-size: 1.35rem;
+            margin-top: 32px;
+            margin-bottom: 14px;
             font-weight: 600;
             color: #fff;
         }
@@ -73,34 +75,68 @@
             color: #ccc;
             font-size: 1.1rem;
         }
-        .cs-section ul {
+        .cs-section p.section-sub {
+            font-size: 1.15rem;
+            color: #e0d8ff;
+            font-weight: 500;
+            margin-top: -12px;
             margin-bottom: 20px;
-            padding-left: 20px;
+        }
+        .cs-section ul {
+            margin-bottom: 24px;
+            padding-left: 24px;
             color: #ccc;
             font-size: 1.1rem;
         }
         .cs-section li {
-            margin-bottom: 10px;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+        .cs-section li strong {
+            color: #fff;
         }
         .cs-image {
             width: 100%;
             border-radius: 12px;
-            margin: 30px 0;
+            margin: 32px 0;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: block;
         }
         .cs-quote {
             border-left: 4px solid var(--ac, #a482fb);
             padding: 20px 24px;
-            margin: 30px 0;
+            margin: 28px 0;
             background: rgba(255,255,255,0.03);
             border-radius: 0 8px 8px 0;
             font-size: 1.25rem;
             font-style: italic;
             color: #fff;
+            line-height: 1.5;
+        }
+        .flow-strip {
+            background: rgba(164, 130, 251, 0.08);
+            border: 1px solid rgba(164, 130, 251, 0.25);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-weight: 500;
+            color: #fff;
+            overflow-x: auto;
+            white-space: nowrap;
+            font-size: 1.05rem;
+        }
+        .cs-note {
+            font-style: italic;
+            color: #999;
+            margin-top: 20px;
+            padding: 14px 18px;
+            border-left: 3px solid rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.02);
+            border-radius: 0 6px 6px 0;
+            font-size: 0.98rem;
         }
         .back-btn {
             display: inline-block;
-            margin-top: 40px;
             padding: 12px 24px;
             background: var(--ac, #a482fb);
             color: #000;
@@ -110,7 +146,7 @@
             transition: opacity 0.3s;
         }
         .back-btn:hover {
-            opacity: 0.8;
+            opacity: 0.85;
         }
         @media (max-width: 768px) {
             .cs-title {
@@ -140,42 +176,42 @@
 </head>
 <body>
     <!-- NAV -->
-  <nav id="nav">
-      <a href="./index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
-      <ul class="nav-links">
-          <li><a href="./index.html#reel">Case Studies</a></li>
-          <li><a href="./index.html#services">Services</a></li>
-          <li><a href="./index.html#process">Process</a></li>
-          <li><a href="./index.html#about">About</a></li>
-          <li><a href="./index.html#reviews">Reviews</a></li>
-      </ul>
-      <a href="https://cal.com/OLANREWAJU-SULAIMON" class="nav-cta">Start a Project ?</a>
-      <button class="mobile-menu-btn" id="mobileMenuBtn">
-          <span></span>
-          <span></span>
-          <span></span>
-      </button>
-  </nav>
+    <nav id="nav">
+        <a href="./index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+        </ul>
+        <a href="https://cal.com/OLANREWAJU-SULAIMON" class="nav-cta">Start a Project ?</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
 
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-      <ul class="mobile-nav-ul">
-          <li><a href="./index.html#reel">Case Studies</a></li>
-          <li><a href="./index.html#services">Services</a></li>
-          <li><a href="./index.html#process">Process</a></li>
-          <li><a href="./index.html#about">About</a></li>
-          <li><a href="./index.html#reviews">Reviews</a></li>
-          <li><a class="ncta" href="https://cal.com/OLANREWAJU-SULAIMON">Start a Project</a></li>
-      </ul>
-  </div>
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-ul">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+            <li><a class="ncta" href="https://cal.com/OLANREWAJU-SULAIMON">Start a Project</a></li>
+        </ul>
+    </div>
 
     <div class="case-study-container">
         <div class="cs-header">
             <h1 class="cs-title">Rydar</h1>
-            <p class="cs-subtitle"><strong>A ride-hailing and delivery experience designed around clarity from booking to drop-off.</strong><br><br>Rydar is a mobility platform designed to help users move from finding a destination to completing a trip with less uncertainty along the way.</p>
+            <p class="cs-subtitle">A ride-hailing experience designed around clarity from booking to drop-off.</p>
         </div>
 
-        <img src="rydar-hero.png" alt="Rydar - Seamless Rides & Deliveries" class="cs-image">
+        <img src="rydar-hero.png" alt="Rydar - A ride-hailing experience designed around clarity from booking to drop-off" class="cs-image">
 
         <div class="cs-meta">
             <div class="meta-item">
@@ -188,11 +224,11 @@
             </div>
             <div class="meta-item">
                 <h4>Platform</h4>
-                <p>Mobile (iOS &amp; Android)</p>
+                <p>Mobile</p>
             </div>
             <div class="meta-item">
                 <h4>Team</h4>
-                <p>PM, Engineering &amp; Stakeholders</p>
+                <p>Cross-functional team including Product Management, Engineering, and relevant project stakeholders</p>
             </div>
         </div>
 
@@ -206,163 +242,131 @@
             <h2>The Problem</h2>
             <p>The core challenge was to design a ride-booking experience where users could quickly make decisions while still having enough information and control to feel confident about their journey.</p>
             <p>This meant making key information such as pickup and destination, vehicle options, pricing, payment status, driver details, and trip progress understandable at the moment users needed it, while also accounting for what happens when the expected journey breaks down.</p>
-            <p>The resulting product brings these states into one connected experience, from <em>“Where are you going today?”</em> through booking, driver arrival, the ride itself, and post-trip feedback.</p>
+            <p>The resulting product brings these states into one connected experience, from “Where are you going today?” through booking, driver arrival, the ride itself, and post-trip feedback.</p>
 
             <h3>The ride does not start when the driver arrives. It starts with confidence.</h3>
             <p>The challenge with Rydar was not simply giving users a way to request a ride. The experience had to help users make several decisions in sequence: Where am I going? Where should I be picked up? Which ride fits my needs? How much will it cost? How do I know my driver is coming?</p>
             <p>The existing product concept covered a broad journey, but that breadth introduced its own UX challenge. Booking, payment, driver matching, tracking, communication, and post-trip actions all needed to feel like parts of the same experience rather than disconnected screens.</p>
-            
+            <p>I therefore approached the problem as a journey-design challenge, rather than a collection of individual UI screens.</p>
+
+            <p>The core problem became:</p>
             <div class="cs-quote">“How might we make every stage of a ride predictable and understandable, from the moment a user enters a destination to the moment the trip is completed?”</div>
 
-            <h3>Core Experience Principles</h3>
-            <table class="cs-table">
-                <thead>
-                    <tr>
-                        <th>Principle</th>
-                        <th>Implementation Focus</th>
-                        <th>User Impact</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>1. Reduce Decision Friction</strong></td>
-                        <td>Surface relevant destinations, saved addresses, ride categories, pricing, and payment options at the point of choice.</td>
-                        <td>Users book faster without having to hunt for essential information.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>2. Make Progress Visible</strong></td>
-                        <td>Provide live vehicle tracking, clear ETA updates, driver identity cards, and continuous trip progression.</td>
-                        <td>Eliminates waiting anxiety and builds trust throughout the journey.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>3. Design for Edge Moments</strong></td>
-                        <td>Direct recovery paths for payment failures, network drops, driver cancellations, and verification issues.</td>
-                        <td>Users never hit dead ends when real-world conditions disrupt the happy path.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p><strong>This shaped the experience around three principles:</strong></p>
+            <ul>
+                <li><strong>1. Reduce decision friction</strong><br>Surface relevant destinations, saved addresses, ride categories, pricing, and payment information at the point of choice rather than making users hunt for them. The reference design reflects this through destination history, saved locations, ride categories, and visible payment options.</li>
+                <li><strong>2. Make progress visible</strong><br>Users should understand where they are in the journey, whether they are waiting for a driver, travelling, or approaching their destination.</li>
+                <li><strong>3. Design for the moments when things go wrong</strong><br>Payment failures, connection interruptions, driver cancellations, expired verification codes, and ride cancellations are part of the product experience, not exceptions to design later.</li>
+            </ul>
+
+            <div class="cs-note">Visual that would strengthen this section: A simple “Current experience → UX challenge → Design opportunity” diagram showing the fragmented ride journey and the opportunity to create one connected flow.</div>
         </div>
 
         <div class="cs-section">
             <h2>Research &amp; Discovery</h2>
             <p>I approached discovery from both the user perspective and the product system. Rather than treating ride booking as a single transaction, I looked at the full journey and the points where users could experience uncertainty or friction.</p>
-            <p>I combined competitor research, UX/UI auditing, user surveys (120+ responses), usability testing, stakeholder discussions, and domain research. The competitor review helped establish common patterns across ride-hailing experiences, while the UX/UI audit helped identify opportunities within the existing product structure. User surveys and usability testing revealed where passengers felt hesitation and needed clearer reassurance.</p>
-            <p>One critical discovery was that the experience could not be evaluated only by whether a user could successfully book a ride. The product also needed to communicate what was happening before, during, and after booking, particularly around payment, driver status, trip progress, and unexpected interruptions. That led me to treat error and edge states as first-class citizens of the primary experience.</p>
-            
-            <img src="rydar-research.png" alt="Research & Discovery - Understanding real users, real journeys, real challenges" class="cs-image">
+            <p>I combined competitor research, UX/UI auditing, user surveys, usability testing, stakeholder discussions, and personal/domain research. The competitor review helped establish common patterns across ride-hailing experiences, while the UX/UI audit helped identify opportunities within the existing product structure. User surveys and usability testing were used to understand how people interpreted the booking journey and where they needed clearer information or reassurance. Stakeholder discussions added the product and business constraints that shaped what could realistically be addressed within the project timeline.</p>
+            <p>The research covered the journey end to end, including account setup, destination and pickup selection, ride comparison, payment, driver matching, live tracking, communication, trip completion, and post-trip feedback.</p>
+            <p>One important discovery was that the experience could not be evaluated only by whether a user could successfully book a ride. The product also needed to communicate what was happening before, during, and after the booking, particularly around payment, driver status, trip progress, and unexpected situations. That led me to treat error and edge states as part of the primary experience rather than secondary screens.</p>
+            <p>The resulting design reflects this broader journey, including dedicated states for payment failure, connection interruptions, driver availability, cancellation, verification issues, and post-trip feedback.</p>
 
-            <h3>Six Recurring Insights</h3>
+            <img src="rydar-research.png" alt="Research & Discovery - Rydar" class="cs-image">
+
+            <h3>What the research pointed to</h3>
+            <p>Across the different inputs, I focused on six recurring themes:</p>
             <ul>
-                <li><strong>Speed &amp; Clarity:</strong> Users should be able to book without unnecessary steps or confusion.</li>
-                <li><strong>Ride Comparison:</strong> Pricing, estimated arrival, vehicle capacity, and ride tier need to be easy to compare side-by-side.</li>
-                <li><strong>Pickup Confidence:</strong> Location selection and saved addresses need to make it crystal clear where driver and passenger will meet.</li>
-                <li><strong>Trust &amp; Visibility:</strong> Driver details, vehicle license information, ETA, and live tracking build vital reassurance after booking.</li>
-                <li><strong>Recovery:</strong> Payment failures, offline states, driver unavailability, cancellations, and verification errors require transparent, one-tap recovery paths.</li>
-                <li><strong>Continuity after the Ride:</strong> Digital receipts, rating &amp; feedback, trip history, and customer support extend the experience seamlessly past drop-off.</li>
+                <li><strong>Speed &amp; clarity</strong><br>Users should be able to book without unnecessary steps or confusion.</li>
+                <li><strong>Ride comparison</strong><br>Pricing, estimated arrival, capacity, and ride type need to be easy to understand before booking.</li>
+                <li><strong>Pickup confidence</strong><br>Location selection and saved addresses need to make it clear where the driver should meet the passenger.</li>
+                <li><strong>Trust &amp; visibility</strong><br>Driver details, vehicle information, ETA, and live tracking help users understand what is happening after booking.</li>
+                <li><strong>Recovery</strong><br>Payment failures, connection issues, unavailable drivers, cancellations, and verification problems need clear recovery paths.</li>
+                <li><strong>Continuity after the ride</strong><br>Reviews, receipts, trip history, saved addresses, and support extend the experience beyond the completed trip.</li>
             </ul>
 
-            <img src="rydar-journey.png" alt="User Journey Map - A smoother journey for every ride" class="cs-image">
+            <h3>Defining the Opportunity</h3>
+            <p class="section-sub">From research to design direction</p>
+            <p>The research pointed to one clear opportunity:</p>
+            <div class="cs-quote">“How might we make the entire ride journey clear and predictable, from booking to drop-off?”</div>
+
+            <p>I focused the design around four priorities:</p>
+            <ul>
+                <li><strong>Clarity:</strong> Make the next action obvious at every stage.</li>
+                <li><strong>Confidence:</strong> Show pricing, ride options, pickup details, and driver information when users need them.</li>
+                <li><strong>Recovery:</strong> Give users clear options when payment, connectivity, verification, or driver availability becomes an issue.</li>
+                <li><strong>Continuity:</strong> Connect booking, tracking, completion, feedback, and trip history into one journey.</li>
+            </ul>
+
+            <p><strong>The opportunity:</strong> Move beyond designing a ride-booking flow and create a product that keeps users informed and confident throughout the journey.</p>
+            <p>These findings became the foundation for the design decisions that followed: make the journey clearer, keep users informed, and provide a clear next step at every stage.</p>
+
+            <img src="rydar-journey.png" alt="User Journey - Rydar" class="cs-image">
+
+            <h3>User Journey</h3>
+            <p>I mapped the journey from onboarding to post-ride to understand not just what users do, but how they feel at each stage. The journey highlights moments of confidence, uncertainty, and friction across booking, ride selection, driver tracking, trip completion, and history.</p>
+            <p>This helped me identify opportunities to reduce anxiety, make key information easier to understand, and provide clear next steps when something goes wrong. The goal was to create a more predictable and reassuring experience from booking to drop-off.</p>
         </div>
 
         <div class="cs-section">
             <h2>Exploration &amp; Ideation</h2>
-            <p><strong>Exploring different ways to make the journey feel effortless</strong></p>
-            <p>I explored the experience around one central question: <em>How can users make decisions quickly without feeling rushed or uncertain?</em></p>
-            
+            <p class="section-sub">Exploring different ways to make the journey feel effortless</p>
+            <p>I explored the experience around one question: How can users make decisions quickly without feeling rushed or uncertain?</p>
+            <p>I focused on three areas:</p>
             <ul>
-                <li><strong>1. Simplifying the booking flow:</strong> Structured destination, pickup, ride selection, and payment into a clean, sequential flow rather than overloading the passenger with inputs upfront.</li>
-                <li><strong>2. Making ride choices easier:</strong> Differentiated vehicle tiers at a glance by pairing clear vehicle icons with upfront pricing, ETA, and capacity details.</li>
-                <li><strong>3. Designing for the complete journey:</strong> Extended design thinking past booking into driver matching, live GPS tracking, in-app messaging, arrival confirmation, reviews, and receipt access.</li>
+                <li><strong>1. Simplifying the booking flow</strong><br>I explored how destination, pickup, ride selection, and payment could be structured into a clear sequence rather than presenting too much information at once.</li>
+                <li><strong>2. Making ride choices easier</strong><br>Different ride categories needed to be distinguishable at a glance. I explored clearer combinations of ride type, price, ETA, capacity, and description so users could compare options with less effort.</li>
+                <li><strong>3. Designing for the complete journey</strong><br>I extended the thinking beyond booking into driver matching, tracking, communication, completion, reviews, and trip history. This helped ensure the experience remained consistent after the initial booking decision.</li>
             </ul>
+            <p>The final direction prioritised clarity, confidence, and continuity rather than adding more features or complexity.</p>
 
-            <img src="rydar-ideation.png" alt="Exploration & Ideation - Sketching ideas, wireframes, and UI direction" class="cs-image">
+            <img src="rydar-ideation.png" alt="Exploration & Ideation - Rydar" class="cs-image">
         </div>
 
         <div class="cs-section">
-            <h2>Solution — Structure &amp; Flow</h2>
-            <p><strong>A clear flow from destination to drop-off</strong></p>
-            <p>I translated research insights into a structured end-to-end user flow guiding passengers smoothly through eight key milestones:</p>
-            
-            <table class="cs-table">
-                <thead>
-                    <tr>
-                        <th>Step</th>
-                        <th>Milestone</th>
-                        <th>Core Design Feature</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>1</strong></td>
-                        <td>Set Destination</td>
-                        <td>Recent &amp; saved locations surfaced upfront</td>
-                    </tr>
-                    <tr>
-                        <td><strong>2</strong></td>
-                        <td>Confirm Pickup</td>
-                        <td>Interactive pin adjustment with clear street labels</td>
-                    </tr>
-                    <tr>
-                        <td><strong>3</strong></td>
-                        <td>Choose Ride</td>
-                        <td>Side-by-side comparison of Standard, Comfort, XL &amp; Delivery</td>
-                    </tr>
-                    <tr>
-                        <td><strong>4</strong></td>
-                        <td>Select Payment</td>
-                        <td>Saved cards, mobile money, or cash options</td>
-                    </tr>
-                    <tr>
-                        <td><strong>5</strong></td>
-                        <td>Match with Driver</td>
-                        <td>Radar animation with realistic estimated search timer</td>
-                    </tr>
-                    <tr>
-                        <td><strong>6</strong></td>
-                        <td>Track Ride</td>
-                        <td>Live GPS map, driver info card, call/message shortcuts</td>
-                    </tr>
-                    <tr>
-                        <td><strong>7</strong></td>
-                        <td>Complete Trip</td>
-                        <td>Clear arrival summary with total fare confirmation</td>
-                    </tr>
-                    <tr>
-                        <td><strong>8</strong></td>
-                        <td>Review &amp; History</td>
-                        <td>Quick 5-star rating, driver tipping, and past receipt access</td>
-                    </tr>
-                </tbody>
-            </table>
+            <h2>Solution - Structure &amp; Flow</h2>
+            <p class="section-sub">Turning the journey into a clearer flow</p>
+            <p>I translated the opportunity into a focused end-to-end flow that guides users from destination selection to completed trip.</p>
+            <p>The structure follows a simple progression:</p>
+            <div class="flow-strip">
+                Set destination &rarr; Confirm pickup &rarr; Choose ride &rarr; Select payment &rarr; Match with driver &rarr; Track ride &rarr; Complete trip &rarr; Review
+            </div>
+            <p>Each stage has a clear primary action, while supporting information appears when it becomes relevant. This keeps the interface focused without removing the details users need to make confident decisions.</p>
+            <p>I also considered the moments outside the ideal path, including payment failure, connection issues, driver availability, cancellations, and verification errors, so users always have a clear recovery path instead of reaching a dead end.</p>
+            <p>The result was a structure designed to make the journey feel predictable, easy to navigate, and consistent from booking through completion.</p>
 
-            <img src="rydar-solution.png" alt="Solution - Structure & Flow: A clear flow from destination to drop-off" class="cs-image">
-
-            <h3>Designed for Real Life: Edge &amp; Recovery States</h3>
-            <p>Real-world journeys face unexpected hurdles. Rydar handles interruptions with dedicated recovery paths:</p>
-            <ul>
-                <li><strong>Payment Issue:</strong> Clear error notification with instant retry or alternative payment selection.</li>
-                <li><strong>Connection Lost:</strong> Persistent offline trip details and cached driver information.</li>
-                <li><strong>Driver Unavailable:</strong> Automatic search radius expansion and quick re-match with nearby drivers.</li>
-                <li><strong>Trip Cancelled:</strong> Transparent explanation, zero cancellation penalty for driver fault, and immediate re-booking.</li>
-                <li><strong>Verification Error:</strong> Straightforward OTP resend option and alternative login routes.</li>
-            </ul>
+            <img src="rydar-solution.png" alt="Solution - Structure & Flow - Rydar" class="cs-image">
         </div>
 
         <div class="cs-section">
-            <h2>Outcomes &amp; Reflection</h2>
-            <p><strong>A more connected experience from booking to completion</strong></p>
-            <p>The final design unified Rydar's ride-hailing and delivery ecosystem into an intuitive, cohesive mobile journey.</p>
+            <h2>Solution - Visual &amp; Interaction Design</h2>
+            <p class="section-sub">Designing for clarity, confidence, and control</p>
+            <p>I translated the structure into a visual system that keeps the interface simple, familiar, and easy to scan.</p>
+            <p>The design uses clear hierarchy, rounded components, consistent spacing, and focused primary actions to help users understand what to do next. Ride options present key information such as price, ETA, capacity, and descriptions together, making comparison easier.</p>
+            <p>I also designed interactions around moments where users need reassurance. Driver tracking surfaces the driver's location and trip progress, while communication options remain accessible during the journey.</p>
+            <p>Across the experience, I maintained consistent patterns for navigation, buttons, cards, feedback, and states. This allowed the product to feel like one connected experience rather than a collection of individual screens.</p>
+        </div>
 
-            <h3>Key Product Impact</h3>
+        <div class="cs-section">
+            <h2>Outcomes &amp; Impact</h2>
+            <p class="section-sub">A more connected experience from booking to completion</p>
+            <p>The final design brought the core ride experience into a clearer, more consistent journey.</p>
+            <p>The main improvements focused on:</p>
             <ul>
-                <li><strong>Clearer Decisions:</strong> Ride options, vehicle capacities, estimated arrival times, and transparent pricing are immediately scannable.</li>
-                <li><strong>Greater Confidence:</strong> Passengers know who their driver is, where they are, and what the trip costs before stepping into the vehicle.</li>
-                <li><strong>Resilient Recovery:</strong> Common real-world failure states have dedicated, intuitive solutions that prevent drop-offs.</li>
-                <li><strong>Holistic Continuity:</strong> Discovery, booking, in-transit tracking, post-trip feedback, and trip history feel like one continuous ecosystem.</li>
+                <li><strong>Clearer decisions:</strong> Ride options, pricing, ETA, and key details are easier to compare.</li>
+                <li><strong>Greater confidence:</strong> Pickup, driver information, and trip progress remain visible when users need them.</li>
+                <li><strong>Better recovery:</strong> Common issues such as payment failure, connection problems, cancellations, and verification errors have clearer next steps.</li>
+                <li><strong>Stronger continuity:</strong> Booking, tracking, completion, reviews, and trip history work as connected parts of the same experience.</li>
             </ul>
+            <p>Rather than claiming unsupported quantitative results, I frame the impact around what the design was built to achieve: less uncertainty, clearer decisions, and a more predictable ride experience.</p>
+        </div>
 
-            <h3>Design Takeaway</h3>
-            <p>Rydar reinforced that great product design is defined just as much by how it handles edge cases as how it handles the happy path. By prioritizing user certainty, predictable navigation, and supportive error states, the platform creates an experience that passengers can rely on every single day.</p>
+        <div class="cs-section">
+            <h2>Reflection</h2>
+            <p class="section-sub">Designing beyond the happy path</p>
+            <p>Rydar reinforced an important lesson for me: a strong product experience is not only about making the primary flow work. It is about making the entire journey feel understandable when conditions change.</p>
+            <p>Working across booking, payment, driver tracking, completion, and recovery states pushed me to think about the product as one connected system rather than a series of screens.</p>
+            <p>The biggest takeaway was the value of clarity at moments of uncertainty. Small decisions around hierarchy, feedback, and next actions can significantly shape how confident a user feels.</p>
+            <p>If I were taking the project further, I would continue validating the experience with real users and use those insights to refine the flows, edge cases, and interaction details.</p>
+            <p>The goal was simple: make every stage of the journey easier to understand and easier to trust.</p>
         </div>
 
         <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
