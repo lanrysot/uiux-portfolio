@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetiq - Fitness &amp; Workout Tracking App | Case Study</title>
+    <link rel="stylesheet" href="style.css?v=39">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .case-study-container {
+            max-width: 1000px;
+            margin: 120px auto 60px;
+            padding: 0 5%;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .cs-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .cs-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .cs-subtitle {
+            font-size: 1.25rem;
+            color: #bbb;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cs-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .meta-item h4 {
+            font-size: 0.9rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .meta-item p {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #eee;
+            margin: 0;
+        }
+        .cs-section {
+            margin-bottom: 60px;
+        }
+        .cs-section h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+            color: var(--ac, #a482fb);
+        }
+        .cs-section h3 {
+            font-size: 1.35rem;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .cs-section h4 {
+            font-size: 1.15rem;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            font-weight: 600;
+            color: #eee;
+        }
+        .cs-section p {
+            margin-bottom: 20px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section p.section-sub {
+            font-size: 1.15rem;
+            color: #e0d8ff;
+            font-weight: 500;
+            margin-top: -12px;
+            margin-bottom: 20px;
+        }
+        .cs-section ul {
+            margin-bottom: 24px;
+            padding-left: 24px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section li {
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+        .cs-section li strong {
+            color: #fff;
+        }
+        .cs-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 32px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: block;
+        }
+        .cs-quote {
+            border-left: 4px solid var(--ac, #a482fb);
+            padding: 20px 24px;
+            margin: 28px 0;
+            background: rgba(255,255,255,0.03);
+            border-radius: 0 8px 8px 0;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #fff;
+            line-height: 1.5;
+        }
+        .flow-strip {
+            background: rgba(164, 130, 251, 0.08);
+            border: 1px solid rgba(164, 130, 251, 0.25);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-weight: 500;
+            color: #fff;
+            overflow-x: auto;
+            white-space: nowrap;
+            font-size: 1.05rem;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--ac, #a482fb);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+        }
+        .back-btn:hover {
+            opacity: 0.85;
+        }
+        @media (max-width: 768px) {
+            .cs-title {
+                font-size: 2rem;
+            }
+            .cs-subtitle {
+                font-size: 1rem;
+            }
+            .cs-section h2 {
+                font-size: 1.5rem;
+            }
+            .case-study-container {
+                margin: 100px auto 40px;
+                padding: 0 20px;
+            }
+            .cs-meta {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                padding: 20px;
+            }
+            .back-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav id="nav">
+        <a href="./index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+        </ul>
+        <a href="https://cal.com/OLANREWAJU-SULAIMON" class="nav-cta">Start a Project ?</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-ul">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+            <li><a class="ncta" href="https://cal.com/OLANREWAJU-SULAIMON">Start a Project</a></li>
+        </ul>
+    </div>
+
+    <div class="case-study-container">
+        <div class="cs-header">
+            <h1 class="cs-title">Kinetiq</h1>
+            <p class="cs-subtitle">A more personalised way to plan, track, and improve fitness</p>
+        </div>
+
+        <img src="kinetiq-hero.png" alt="Kinetiq - Fitness &amp; Workout Tracking App" class="cs-image">
+
+        <div class="cs-meta">
+            <div class="meta-item">
+                <h4>Role</h4>
+                <p>Product Designer</p>
+            </div>
+            <div class="meta-item">
+                <h4>Platform</h4>
+                <p>Mobile</p>
+            </div>
+            <div class="meta-item">
+                <h4>Project</h4>
+                <p>Fitness &amp; Workout Tracking App</p>
+            </div>
+            <div class="meta-item">
+                <h4>Focus</h4>
+                <p>Fitness UX &amp; Habit Building</p>
+            </div>
+        </div>
+
+        <div class="cs-section">
+            <h2>Overview</h2>
+            <p>Kinetiq helps users create workout plans, follow guided exercises, track fitness progress, and build consistent training habits. The designs bring workout discovery, personalised recommendations, exercise guidance, progress tracking, and account management into one mobile experience.</p>
+
+            <h3>Design Focus</h3>
+            <ul>
+                <li><strong>Personalised onboarding</strong></li>
+                <li><strong>Workout discovery and filtering</strong></li>
+                <li><strong>Custom workout creation</strong></li>
+                <li><strong>Guided exercise sessions</strong></li>
+                <li><strong>Progress and weight tracking</strong></li>
+                <li><strong>Workout reminders and settings</strong></li>
+            </ul>
+
+            <h3>Core Challenge</h3>
+            <p>Make fitness planning feel approachable while helping users find suitable workouts, stay consistent, and understand their progress.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>01. The Problem</h2>
+            <p class="section-sub">Making fitness easier to start and maintain</p>
+            <p>Many people want to improve their fitness but struggle to find suitable workouts, follow a structured plan, and stay consistent while tracking progress.</p>
+            <p>Kinetiq brings workout discovery, personalised plans, guided exercises, progress tracking, and reminders into one mobile experience.</p>
+
+            <h3>Key challenges</h3>
+            <ul>
+                <li><strong>Workout discovery:</strong> Finding exercises that match individual goals and fitness levels.</li>
+                <li><strong>Personalisation:</strong> Creating workout plans suited to users&rsquo; needs.</li>
+                <li><strong>Consistency:</strong> Staying motivated and maintaining regular training habits.</li>
+                <li><strong>Progress tracking:</strong> Understanding improvements across workouts and fitness records.</li>
+            </ul>
+
+            <div class="cs-quote">
+                &ldquo;How might we help users build a sustainable fitness routine through a simple, personalised experience?&rdquo;
+            </div>
+        </div>
+
+        <div class="cs-section">
+            <h2>02. Research</h2>
+            <p class="section-sub">Understanding fitness needs and behaviours</p>
+            <p>I reviewed the supplied designs and mapped the main journey from onboarding to workout completion and progress tracking.</p>
+
+            <h3>Research activities</h3>
+            
+            <h4>Competitor analysis</h4>
+            <p>Review common patterns in workout discovery, guidance, and tracking across leading fitness platforms including Nike Training Club, Freeletics, Fitbod, and MyFitnessPal.</p>
+            <img src="kinetiq-competitor.png" alt="Kinetiq - Competitor Analysis" class="cs-image">
+
+            <h4>Journey mapping</h4>
+            <p>Connect goal selection, workout discovery, training, and progress review into one continuous, encouraging experience.</p>
+            <img src="kinetiq-journey.png" alt="Kinetiq - User Journey Mapping" class="cs-image">
+
+            <h4>Usability review</h4>
+            <p>Examine navigation, workout creation, exercise guidance, and tracking flows to eliminate friction points during active workouts.</p>
+
+            <div class="cs-quote">
+                &ldquo;Make fitness feel more structured by helping users understand what to do, how to do it, and how to monitor their progress.&rdquo;
+            </div>
+        </div>
+
+        <div class="cs-section">
+            <h2>03. Solution</h2>
+            <p class="section-sub">One connected experience for everyday fitness</p>
+            <p>Kinetiq connects the core fitness journey through five key experiences:</p>
+            <ul>
+                <li><strong>Personalised onboarding:</strong> Capture fitness goals and experience levels.</li>
+                <li><strong>Workout discovery:</strong> Browse and filter programs by goals, difficulty, and equipment.</li>
+                <li><strong>Guided training:</strong> Follow structured exercises with timers, instructions, and workout controls.</li>
+                <li><strong>Progress tracking:</strong> Review workout history, weight records, and fitness statistics.</li>
+                <li><strong>Consistency tools:</strong> Set reminders and manage workout preferences.</li>
+            </ul>
+
+            <h3>Core flow</h3>
+            <div class="flow-strip">Set Goals &rarr; Discover Workouts &rarr; Train &rarr; Track Progress &rarr; Stay Consistent</div>
+        </div>
+
+        <div class="cs-section">
+            <h2>04. Testing</h2>
+            <p class="section-sub">Reviewing the core user flows</p>
+            <p>I reviewed the main journeys represented in the designs to assess clarity, consistency, and ease of navigation.</p>
+
+            <h3>The review focused on:</h3>
+            <ul>
+                <li>Onboarding and goal selection</li>
+                <li>Workout discovery and filtering</li>
+                <li>Workout creation and editing</li>
+                <li>Exercise guidance and playback</li>
+                <li>Progress tracking and settings</li>
+            </ul>
+
+            <p>The aim was to identify confusing steps and ensure that key actions and feedback were easy to understand.</p>
+            <p style="font-style: italic; color: #888; font-size: 0.95rem; margin-top: 12px;">This was a design review of the supplied screens. No participant-based usability test results were provided.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>05. Outcomes</h2>
+            <p class="section-sub">A more structured and personalised fitness experience</p>
+            <p>The final design brings workout planning, guided training, progress tracking, and fitness management into one connected app.</p>
+
+            <ul>
+                <li><strong>Easier onboarding:</strong> Users can establish their goals and fitness preferences from day one.</li>
+                <li><strong>More relevant workouts:</strong> Programs can be explored by level, goal, and equipment.</li>
+                <li><strong>Structured training:</strong> Guided exercises help users follow their workout sessions with visual timers and rep counters.</li>
+                <li><strong>Clearer progress:</strong> Workout history and weight records make activity easier to review and celebrate.</li>
+                <li><strong>Better consistency support:</strong> Reminders and personalised plans encourage regular engagement and habit building.</li>
+            </ul>
+
+            <h3>Reflection</h3>
+            <p>Kinetiq reinforced the importance of designing beyond the workout itself. A useful fitness app should help users plan, train, understand their progress, and return to their routine with confidence.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
+            <a href="portfolio.html" class="back-btn">Back to Portfolio</a>
+            <a href="https://www.figma.com/proto/KafSKtHsouWTu8J79A4emh/Kinetiq?node-id=7186-6628&p=f&t=4FoWaSOxHowlijMZ-1&scaling=scale-down&content-scaling=fixed&page-id=43%3A2&starting-point-node-id=7186%3A6628" target="_blank" rel="noopener" class="back-btn" style="background: transparent; border: 1px solid var(--ac, #a482fb); color: #fff;">View Prototype</a>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-nav-ul a');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    </script>
+</body>
+</html>

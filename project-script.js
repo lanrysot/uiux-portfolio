@@ -186,6 +186,23 @@
           results: [{ n: "7", l: "Learner Stages" }, { n: "4", l: "Core Pillars" }, { n: "100%", l: "Connected Journey" }],
           tools: ["Figma", "Design Systems", "Prototyping", "EdTech UX"],
           caseStudyUrl: "learnix-case-study.html"
+        },
+        {
+          cat: "Fitness App", client: "Kinetiq",
+          title: "Kinetiq — Fitness &amp; Workout Tracking App",
+          tagline: "A more personalised way to plan, track, and improve fitness through guided exercises, progress tracking, and habit building.",
+          details: [
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>', title: 'Project Overview', content: 'Kinetiq helps users create workout plans, follow guided exercises, track fitness progress, and build consistent training habits.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>', title: 'The Problem', content: 'Many people struggle to find suitable workouts, follow a structured routine, and maintain consistency. The challenge was making fitness planning simple and approachable.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>', title: 'Research & Discovery', content: 'Analysed leading fitness platforms (Nike Training Club, Freeletics, Fitbod, MyFitnessPal) and mapped user journeys from goal setting to habit formation.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>', title: 'Core Flow', content: 'Structured a continuous progression: Set Goals → Discover Workouts → Train → Track Progress → Stay Consistent, ensuring effortless workout execution.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>', title: 'Outcomes & Design', content: 'Delivered personalised onboarding, dynamic workout filtering, guided timers with rep tracking, and comprehensive weight and milestone analytics.' }
+          ],
+          before: "Unstructured fitness routines with generic workout recommendations, manual pen-and-paper tracking, and high habit drop-off rates.",
+          after: "A connected, motivating mobile fitness experience with personalized programs, guided live timers, and visible weekly progress milestones.",
+          results: [{ n: "5", l: "Core Pillars" }, { n: "7", l: "Journey Milestones" }, { n: "100%", l: "Connected Habit Flow" }],
+          tools: ["Figma", "Design Systems", "Prototyping", "Fitness UX"],
+          caseStudyUrl: "kinetiq-case-study.html"
         }
       ];
 
