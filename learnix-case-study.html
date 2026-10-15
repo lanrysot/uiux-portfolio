@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnix Academy - E-learning &amp; Skills Development App | Case Study</title>
+    <link rel="stylesheet" href="style.css?v=39">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        .case-study-container {
+            max-width: 1000px;
+            margin: 120px auto 60px;
+            padding: 0 5%;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .cs-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .cs-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .cs-subtitle {
+            font-size: 1.25rem;
+            color: #bbb;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .cs-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .meta-item h4 {
+            font-size: 0.9rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .meta-item p {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: #eee;
+            margin: 0;
+        }
+        .cs-section {
+            margin-bottom: 60px;
+        }
+        .cs-section h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            font-weight: 700;
+            color: var(--ac, #a482fb);
+        }
+        .cs-section h3 {
+            font-size: 1.35rem;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .cs-section p {
+            margin-bottom: 20px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section p.section-sub {
+            font-size: 1.15rem;
+            color: #e0d8ff;
+            font-weight: 500;
+            margin-top: -12px;
+            margin-bottom: 20px;
+        }
+        .cs-section ul {
+            margin-bottom: 24px;
+            padding-left: 24px;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .cs-section li {
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+        .cs-section li strong {
+            color: #fff;
+        }
+        .cs-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 32px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: block;
+        }
+        .cs-quote {
+            border-left: 4px solid var(--ac, #a482fb);
+            padding: 20px 24px;
+            margin: 28px 0;
+            background: rgba(255,255,255,0.03);
+            border-radius: 0 8px 8px 0;
+            font-size: 1.25rem;
+            font-style: italic;
+            color: #fff;
+            line-height: 1.5;
+        }
+        .flow-strip {
+            background: rgba(164, 130, 251, 0.08);
+            border: 1px solid rgba(164, 130, 251, 0.25);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+            font-weight: 500;
+            color: #fff;
+            overflow-x: auto;
+            white-space: nowrap;
+            font-size: 1.05rem;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--ac, #a482fb);
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: opacity 0.3s;
+        }
+        .back-btn:hover {
+            opacity: 0.85;
+        }
+        @media (max-width: 768px) {
+            .cs-title {
+                font-size: 2rem;
+            }
+            .cs-subtitle {
+                font-size: 1rem;
+            }
+            .cs-section h2 {
+                font-size: 1.5rem;
+            }
+            .case-study-container {
+                margin: 100px auto 40px;
+                padding: 0 20px;
+            }
+            .cs-meta {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                padding: 20px;
+            }
+            .back-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAV -->
+    <nav id="nav">
+        <a href="./index.html" class="nav-logo">OLANREWAJU SULAIMON<span class="dot">.</span></a>
+        <ul class="nav-links">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+        </ul>
+        <a href="https://cal.com/OLANREWAJU-SULAIMON" class="nav-cta">Start a Project ?</a>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-ul">
+            <li><a href="./index.html#reel">Case Studies</a></li>
+            <li><a href="./index.html#services">Services</a></li>
+            <li><a href="./index.html#process">Process</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#reviews">Reviews</a></li>
+            <li><a class="ncta" href="https://cal.com/OLANREWAJU-SULAIMON">Start a Project</a></li>
+        </ul>
+    </div>
+
+    <div class="case-study-container">
+        <div class="cs-header">
+            <h1 class="cs-title">Learnix Academy</h1>
+            <p class="cs-subtitle">Making learning easier to discover, start, and complete</p>
+        </div>
+
+        <img src="learnix-hero.png" alt="Learnix Academy - E-learning &amp; Skills Development App" class="cs-image">
+
+        <div class="cs-meta">
+            <div class="meta-item">
+                <h4>Role</h4>
+                <p>Product Designer</p>
+            </div>
+            <div class="meta-item">
+                <h4>Platform</h4>
+                <p>Mobile</p>
+            </div>
+            <div class="meta-item">
+                <h4>Project</h4>
+                <p>E-learning &amp; Skills Development App</p>
+            </div>
+            <div class="meta-item">
+                <h4>Focus</h4>
+                <p>EdTech UX &amp; Learning Lifecycle</p>
+            </div>
+        </div>
+
+        <div class="cs-section">
+            <h2>Overview</h2>
+            <p>Learnix Academy is a mobile learning platform designed to help people discover relevant courses, learn from expert instructors, save courses for later, and manage their learning journey from one place.</p>
+            <p>The experience spans the full learning lifecycle, from discovering a skill and choosing a course to enrolling, completing lessons, tracking progress, and getting support. The product also includes course categories, search, recommendations, wishlists, instructor profiles, reviews, multilingual support, and learner account management.</p>
+
+            <h3>Design Focus</h3>
+            <ul>
+                <li><strong>Course discovery and search</strong></li>
+                <li><strong>Learning and course structure</strong></li>
+                <li><strong>Course enrollment</strong></li>
+                <li><strong>Progress and completion</strong></li>
+                <li><strong>Instructor discovery</strong></li>
+                <li><strong>Wishlist and saved courses</strong></li>
+                <li><strong>Learner profile and settings</strong></li>
+                <li><strong>Support and communication</strong></li>
+            </ul>
+
+            <h3>Core Challenge</h3>
+            <p>The opportunity was to design an experience that could handle a large amount of educational content without making learners feel overwhelmed.</p>
+            <p>Learnix needed to help users quickly answer three important questions:</p>
+            <ul>
+                <li><strong>What should I learn?</strong></li>
+                <li><strong>Why should I choose this course?</strong></li>
+                <li><strong>How do I keep progressing once I start?</strong></li>
+            </ul>
+        </div>
+
+        <div class="cs-section">
+            <h2>The Problem</h2>
+            <p class="section-sub">Turning an overwhelming course library into a clear learning journey</p>
+            <p>Learnix Academy brings together courses across design, business, technology, finance, marketing, personal development, and other disciplines. The product also combines discovery, enrollment, video lessons, instructors, reviews, wishlists, progress, and account management.</p>
+            <p>The challenge was therefore not simply giving learners more content. It was helping them make confident learning decisions and move smoothly from discovery to completion.</p>
+
+            <h3>Key challenges</h3>
+            <ul>
+                <li><strong>Course discovery:</strong> Help learners find relevant courses without getting lost among many categories and topics.</li>
+                <li><strong>Course evaluation:</strong> Surface the information needed to decide whether a course is worth taking, including lessons, duration, instructor, reviews, resources, and certification.</li>
+                <li><strong>Learning continuity:</strong> Make it easy to return to enrolled courses and continue learning.</li>
+                <li><strong>Motivation and progress:</strong> Give learners visibility into completed and unfinished courses.</li>
+                <li><strong>Trust and confidence:</strong> Use instructor information, reviews, course details, and clear enrollment information to support decisions.</li>
+                <li><strong>Support:</strong> Provide accessible help and instructor communication when learners encounter obstacles.</li>
+            </ul>
+
+            <div class="cs-quote">
+                &ldquo;How might we help learners quickly find the right course, understand its value, and stay engaged through completion?&rdquo;
+            </div>
+
+            <p>The opportunity was to transform Learnix from a collection of educational content into a more intentional learning journey, from curiosity to progress.</p>
+
+            <img src="learnix-problem.png" alt="Learnix - The Problem and Core Experience" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Research &amp; Discovery</h2>
+            <p class="section-sub">Understanding How Learners Discover, Evaluate, and Continue Learning</p>
+            <p>Learnix Academy is designed around more than course browsing. The experience connects course discovery, evaluation, enrollment, learning, progress tracking, saved courses, instructor discovery, and support within one mobile product.</p>
+            <p>I reviewed the existing product flows to understand where learners make decisions, what information supports those decisions, and where the experience could provide stronger guidance.</p>
+
+            <h3>01. Content &amp; Course Discovery</h3>
+            <p>I mapped how learners move from a broad learning goal to a specific course. The experience supports:</p>
+            <ul>
+                <li>Search by course, topic, or skill</li>
+                <li>Popular searches</li>
+                <li>Topic and category exploration</li>
+                <li>Recommended courses</li>
+                <li>Popular courses</li>
+                <li>Instructor discovery</li>
+            </ul>
+            <p>This creates multiple entry points into the learning experience while giving learners different ways to discover relevant content.</p>
+
+            <h3>02. Course Evaluation</h3>
+            <p>Before enrolling, learners need enough information to understand whether a course is relevant to their goals. The course experience provides:</p>
+            <ul>
+                <li>Course overview</li>
+                <li>Lesson count and duration</li>
+                <li>Difficulty level</li>
+                <li>Instructor information</li>
+                <li>Reviews and ratings</li>
+                <li>Learning outcomes</li>
+                <li>Downloadable resources</li>
+                <li>Certificate information</li>
+                <li>Access information</li>
+                <li>Pricing and enrollment details</li>
+            </ul>
+            <p>These elements informed the information hierarchy of the course-detail experience.</p>
+
+            <h3>03. Learning &amp; Progress</h3>
+            <p>I looked beyond enrollment to understand what happens after a learner starts a course. The product includes structured lessons with individual durations, previous and next navigation, discussion, and completed-course states.</p>
+            <div class="cs-quote">
+                &ldquo;Enrollment is only the beginning. The experience must also help learners continue.&rdquo;
+            </div>
+
+            <h3>04. Retention &amp; Personalization</h3>
+            <p>Saved courses, enrolled courses, recommendations, profile information, and learning history create opportunities for learners to build a more personal learning journey.</p>
+
+            <h3>05. Support &amp; Communication</h3>
+            <p>Learning can come with questions or obstacles. Learnix includes discussion features that allow learners to communicate with instructors, alongside customer support for additional assistance.</p>
+
+            <h3>Research Activities</h3>
+
+            <h4>Competitor Analysis</h4>
+            <p>I reviewed common patterns across learning platforms around course discovery, content hierarchy, enrollment, progress, instructor credibility, and learner retention.</p>
+            <p><strong>Goal:</strong> Identify established interaction patterns while finding opportunities to create a more focused mobile learning experience.</p>
+            <img src="learnix-competitor.png" alt="Learnix - Competitor Analysis" class="cs-image">
+
+            <h4>Proto-Persona</h4>
+            <p>I created a representative learner profile around the behaviours the product needs to support: discovering relevant skills, comparing courses, making confident enrollment decisions, and maintaining learning momentum.</p>
+            <img src="learnix-persona.png" alt="Learnix - Proto-Persona" class="cs-image">
+
+            <h4>Journey Mapping</h4>
+            <p>I mapped the learner journey across:</p>
+            <div class="flow-strip">Discover &rarr; Explore &rarr; Evaluate &rarr; Enroll &rarr; Learn &rarr; Track &rarr; Return</div>
+            <p>This helped connect individual screens into one continuous learning experience.</p>
+            <img src="learnix-journey.png" alt="Learnix - Learner Journey Mapping" class="cs-image">
+
+            <h4>Usability Review</h4>
+            <p>I reviewed the major flows with a focus on:</p>
+            <ul>
+                <li>Information hierarchy</li>
+                <li>Navigation clarity</li>
+                <li>Course comparison</li>
+                <li>Enrollment friction</li>
+                <li>Learning continuity</li>
+                <li>Progress visibility</li>
+                <li>Support accessibility</li>
+            </ul>
+            <img src="learnix-usability.png" alt="Learnix - Usability Review" class="cs-image">
+
+            <h3>Research Opportunity</h3>
+            <p>The strongest opportunity was to move Learnix beyond course discovery and design for the complete learner relationship:</p>
+            <div class="flow-strip">Find something relevant &rarr; Understand its value &rarr; Start learning &rarr; Keep progressing &rarr; Return for the next skill</div>
+        </div>
+
+        <div class="cs-section">
+            <h2>Defining the Opportunity</h2>
+            <p class="section-sub">From course discovery to learning momentum</p>
+            <p>The research showed that Learnix needs to support more than the moment a learner finds a course. The experience should help users move confidently through the entire learning journey.</p>
+
+            <div class="cs-quote">
+                &ldquo;How can Learnix turn course discovery into meaningful, continued learning?&rdquo;
+            </div>
+
+            <p>I defined four opportunity areas:</p>
+            <ul>
+                <li><strong>01. Discover with Purpose:</strong> Help learners move from broad interests to relevant courses through search, categories, recommendations, and curated content.</li>
+                <li><strong>02. Choose with Confidence:</strong> Give learners the right information to evaluate a course, including outcomes, lessons, duration, instructor details, reviews, resources, and pricing.</li>
+                <li><strong>03. Learn with Continuity:</strong> Make the transition from enrollment to active learning feel natural through structured lessons, clear navigation, and progress visibility.</li>
+                <li><strong>04. Return with Motivation:</strong> Use enrolled courses, saved content, recommendations, and personal learning areas to give users reasons to return and continue developing their skills.</li>
+            </ul>
+
+            <h3>Design Direction</h3>
+            <p>The experience was shaped around a simple principle:</p>
+            <div class="cs-quote">
+                &ldquo;Help learners find the right thing, understand its value, start with confidence, and keep moving forward.&rdquo;
+            </div>
+            <img src="learnix-opportunity.png" alt="Learnix - Defining the Opportunity" class="cs-image">
+        </div>
+
+        <div class="cs-section">
+            <h2>Exploration &amp; Ideation</h2>
+            <p class="section-sub">From research insights to a focused learning experience</p>
+            <p>The research and usability review helped identify where Learnix could create a more intentional learning journey. The goal was to move beyond simply presenting courses and instead help learners discover relevant content, make confident decisions, start learning easily, and maintain momentum.</p>
+
+            <h3>Key Design Directions</h3>
+            <ul>
+                <li><strong>1. Make discovery purposeful:</strong> Improve search, categories, recommendations, and course organization so learners can quickly find relevant content.</li>
+                <li><strong>2. Help learners choose with confidence:</strong> Bring important course information together, including learning outcomes, duration, difficulty, instructor details, reviews, resources, and pricing.</li>
+                <li><strong>3. Create continuity between enrollment and learning:</strong> Connect course enrollment directly to structured lessons, clear navigation, and progress tracking so learners always know where they are and what comes next.</li>
+                <li><strong>4. Encourage learners to return:</strong> Use enrolled courses, saved courses, recommendations, and learning history to support continued engagement.</li>
+            </ul>
+        </div>
+
+        <div class="cs-section">
+            <h2>Solution: Structure &amp; Flow</h2>
+            <p class="section-sub">A connected journey from discovery to completion</p>
+            <p>The experience was structured around a simple learning flow:</p>
+            <div class="flow-strip">Discover &rarr; Explore &rarr; Evaluate &rarr; Enroll &rarr; Learn &rarr; Track &rarr; Return</div>
+            <p>Each stage has a clear purpose and next action.</p>
+
+            <h3>Core improvements</h3>
+            <ul>
+                <li>Simplified course discovery</li>
+                <li>Clearer course information</li>
+                <li>More focused enrollment flow</li>
+                <li>Structured lesson experience</li>
+                <li>Visible learning progress</li>
+                <li>Easier access to saved and enrolled courses</li>
+                <li>Support for continued learning</li>
+            </ul>
+            <p>The goal was to reduce unnecessary decisions and help learners move naturally from finding a course to making progress with it.</p>
+        </div>
+
+        <div class="cs-section">
+            <h2>Solution: Visual &amp; Interaction Design</h2>
+            <p class="section-sub">Designing for clarity, confidence, and continuity</p>
+            <p>The interface was designed around a consistent visual and interaction language that keeps educational content easy to scan and important actions easy to understand.</p>
+
+            <h3>Key principles</h3>
+            <ul>
+                <li><strong>Clear information hierarchy:</strong> Course titles, instructors, ratings, duration, pricing, and learning outcomes are prioritized so learners can evaluate content quickly.</li>
+                <li><strong>Focused course details:</strong> The course-detail experience brings essential decision-making information together before enrollment.</li>
+                <li><strong>Structured learning:</strong> Lessons are organized with clear navigation and individual durations, helping learners understand their progress through the course.</li>
+                <li><strong>Progress visibility:</strong> Learning progress and completed courses provide feedback that helps learners understand where they are in their journey.</li>
+                <li><strong>Consistent navigation:</strong> Core areas such as Explore, My Course, Wishlist, and Profile create predictable ways to move around the product.</li>
+            </ul>
+        </div>
+
+        <div class="cs-section">
+            <h2>Validation</h2>
+            <p class="section-sub">Reviewing the experience against the key flows</p>
+            <p>The redesigned experience was reviewed across the major learner journey to assess clarity, navigation, decision-making, and continuity.</p>
+
+            <h3>Areas reviewed</h3>
+            <ul>
+                <li>Information hierarchy</li>
+                <li>Navigation clarity</li>
+                <li>Course comparison</li>
+                <li>Enrollment flow</li>
+                <li>Learning continuity</li>
+                <li>Progress visibility</li>
+                <li>Support accessibility</li>
+            </ul>
+
+            <h3>Key observations</h3>
+            <p>The core flows provide a clear path from discovery to learning, with strong support for course information, recommendations, and progress visibility.</p>
+            <p>The main opportunities identified were around making course comparison easier and providing more personalized guidance to help learners choose what to learn next.</p>
+            <div class="cs-quote">
+                &ldquo;The final experience is designed to answer one question at every stage: What should I do next?&rdquo;
+            </div>
+        </div>
+
+        <div class="cs-section">
+            <h2>Outcomes &amp; Impact</h2>
+            <p class="section-sub">Creating a more connected learning experience</p>
+            <p>The final Learnix experience brings discovery, course evaluation, enrollment, learning, progress, and continued engagement into one connected mobile journey.</p>
+
+            <h3>Key outcomes</h3>
+            <ul>
+                <li><strong>Easier course discovery:</strong> Search, categories, recommendations, and curated content help learners find relevant courses.</li>
+                <li><strong>More confident decisions:</strong> Course information, instructor details, reviews, outcomes, duration, and pricing are brought together to support enrollment decisions.</li>
+                <li><strong>Stronger learning continuity:</strong> Structured lessons and clear navigation make it easier to continue learning after enrollment.</li>
+                <li><strong>Better progress visibility:</strong> Learners can understand their current progress and completed courses.</li>
+                <li><strong>Greater retention potential:</strong> Enrolled courses, saved content, recommendations, and learning history create natural pathways back into the product.</li>
+            </ul>
+        </div>
+
+        <div class="cs-section">
+            <h2>Reflection</h2>
+            <p>The biggest lesson from Learnix was that an e-learning product should not be designed around courses alone. It should be designed around the learner's journey.</p>
+            <p>The strongest experience connects the moments before, during, and after enrollment:</p>
+            <div class="flow-strip">Discover &rarr; Decide &rarr; Learn &rarr; Progress &rarr; Return</div>
+            <p>For me, the project reinforced the value of designing beyond individual screens. When discovery, decision-making, learning, and retention are treated as one connected experience, the product becomes more useful to learners and creates stronger opportunities for long-term engagement.</p>
+        </div>
+
+        <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 40px;">
+            <a href="portfolio.html" class="back-btn">Back to Portfolio</a>
+            <a href="https://www.figma.com/proto/LSyv8vUfD3dzFz1EVqvREU/Learnix?node-id=4-4954&t=l8BYVMTFyDF98ATG-1&scaling=min-zoom&content-scaling=fixed&page-id=1%3A3&starting-point-node-id=4%3A700" target="_blank" rel="noopener" class="back-btn" style="background: transparent; border: 1px solid var(--ac, #a482fb); color: #fff;">View Prototype</a>
+        </div>
+    </div>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-nav-ul a');
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            });
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+        }
+    </script>
+</body>
+</html>

@@ -169,6 +169,23 @@
           results: [{ n: "7", l: "Flow Milestones" }, { n: "5", l: "Core Pillars" }, { n: "100%", l: "Verified Continuity" }],
           tools: ["Figma", "Design Systems", "Prototyping", "Fintech UX"],
           caseStudyUrl: "vesta-case-study.html"
+        },
+        {
+          cat: "EdTech App", client: "Learnix Academy",
+          title: "Learnix — E-Learning &amp; Skills Development App",
+          tagline: "Making learning easier to discover, start, and complete through structured lessons, progress visibility, and learner momentum.",
+          details: [
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>', title: 'Project Overview', content: 'Learnix Academy is a mobile learning platform designed to help people discover relevant courses, learn from expert instructors, and manage their learning journey.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>', title: 'The Problem', content: 'Turning an overwhelming course library into a clear learning journey. The challenge was helping learners make confident decisions and move smoothly from discovery to completion.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>', title: 'Research & Discovery', content: 'Audited competitors (Udemy, Coursera, Skillshare, LinkedIn Learning), mapped learner proto-personas, and structured user journeys across all learning touchpoints.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>', title: 'Core Flow', content: 'Structured a continuous progression: Discover → Explore → Evaluate → Enroll → Learn → Track → Return, supporting intentional learning momentum.' },
+            { icon: '<svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>', title: 'Outcomes & Design', content: 'Delivered intuitive course discovery, high-transparency course details, structured video lessons, real-time progress indicators, and strong retention pathways.' }
+          ],
+          before: "Overwhelming course catalogs with dense navigation, unclear syllabus outcomes, and high drop-off rates after initial enrollment.",
+          after: "A connected, motivating mobile learning experience with clear course evaluation, structured lesson pacing, and visible progress tracking.",
+          results: [{ n: "7", l: "Learner Stages" }, { n: "4", l: "Core Pillars" }, { n: "100%", l: "Connected Journey" }],
+          tools: ["Figma", "Design Systems", "Prototyping", "EdTech UX"],
+          caseStudyUrl: "learnix-case-study.html"
         }
       ];
 
